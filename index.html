@@ -6,20 +6,23 @@
     </head>
     <body>
     <nav>
-        <dl>
-            <dt>
+        <ol>
+            <li>
                 <a href="#World Wide Web General">World Wide Web General</a>
-            </dt>
-            <dt>
+            </li>
+            <li>
                 <a href="#Web Server">Web Server</a>
-            </dt>
-            <dt>
+            </li>
+            <li>
                 <a href="#Web Client">Web Client</a>
-            </dt>
-            <dt>
+            </li>
+            <li>
                 <a href="#Hello World">Hello World</a>
-            </dt>
-        </dl>
+            </li>
+            <li>
+                <a href="#html info">html info</a>
+            </li>
+        </ol>
     </nav>
         <a href="cheatsheet.html" target="_blank" title="Go to cheatsheet">
             <p>Cheatsheet</p>
@@ -31,17 +34,30 @@
                     <ol>
                         <li>
                             What are the most essential technologies that made the World Wide Web such a success?
-                            <pre>
+                            <p>
                                 URL (uniform resource locator), which is the addressing scheme to find a document.
                                 HTTP (hypertext transfer protocol), which connects computers together.
                                 HTML (hypertext markup language), which formats pages containing hypertext links.
-                            </pre>
+                                CSS (Cascading Style Sheets)
+                                JS (JavaScript)
+                                Web Server, Server like facebook.com which can response to a request from a Web Client
+                                Web Client, a browser which the user uses to request html-files from the Web Server
+                            </p>
                         </li>
                         <li>
                             How are resources (html pages, images, etc.) addressed in the web?
+                            <p>
+                                URLs. The uniform resource locator (URL) is the most common form of resource identifier.
+                                URLs describe the specific location of a resource on a particular server.
+                                They tell you exactly how to fetch a resource from a precise, fixed location.
+                            </p>
                         </li>
                         <li>
                             What are the general components of an url?
+                            <p>
+                                An url typically has 9 parts, the protocol (or scheme), subdomain, domain name, top level domain, port, path, query, parameters, and fragment.
+                                But the 3 general components of an url, is the scheme, the domain name (server) and the page.
+                            </p>
                         </li>
                     </ol>
                 </section>
@@ -52,6 +68,9 @@
                     <ol>
                         <li>
                             What is a web server?
+                            <p>
+
+                            </p>
                         </li>
                         <li>
                             What does a web server?
@@ -89,7 +108,7 @@
                             What is the html head element?
                         </li>
                         <li>
-                            What does <code><!DOCTYPE html></code> mean?
+                            What does &lt;!DOCTYPE html&gt; mean?
                         </li>
                         <li>
                             What are the two top most elements within the html element?
@@ -101,6 +120,73 @@
                             How to mark up important ext and how is it displayed in the browser?
                         </li>
                     </ol>
+                </section>
+            </li>
+            <li>
+                <section id="html info">
+                    <h3>html info</h3>
+                        <dl>
+                            <dt>
+                                &lt;!DOCTYPE html&gt;
+                            </dt>
+                            <dd>
+                                An html document needs to start with a &lt;!DOCTYPE html &gt; declaration.
+                                This isn't a html tag, it is information to the browser about what type of document this is.
+                            </dd>
+                            <dt>
+                                &lt;html&gt;
+                            </dt>
+                            <dd>
+                                &lt;html&gt; tag represents the root of an HTML document.
+                                The &lt;html&gt; tag also contains all HTML-tags except the &lt;!DOCTYPE&gt; tag.
+                                In the html tag you can also declare the language with the "lang" attribute which helps search engines and browsers.
+                            </dd>
+                            <dt>
+                                &lt;head&gt;
+                            </dt>
+                            <dd>
+                                The &lt;head&gt; element is a container for metadata. (data about the html document, which is not displayed)
+                                Typical metadata information: document title, character set, styles, scripts, and other meta information
+
+                                Elements which can go into the head element:
+
+                                <ul>
+                                    <li>
+                                        &lt;title&gt; (required in every HTML document)
+                                    </li>
+                                    <li>
+                                            &lt;style&gt;
+                                    </li>
+                                    <li>
+                                        &lt;base&gt;
+                                    </li>
+                                    <li>
+                                        &lt;link&gt;
+                                    </li>
+                                    <li>
+                                        &lt;meta&gt;
+                                    </li>
+                                    <li>
+                                        &lt;script&gt;
+                                    </li>
+                                    <li>
+                                        &lt;noscript&gt;
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dt>
+
+                            </dt>
+                            <dd>
+
+                            </dd>
+                            <dt>
+
+                            </dt>
+                            <dd>
+                                
+                            </dd>
+                        </dl>
                 </section>
             </li>
         </ul>
