@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: white;
+}
+
+h1.main {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+strong.important {
+    color: #119b15;
+}
+
+h1.overview {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+h3.question {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    color: #55bb58;
+}
+
+a {
+    color: darkgreen;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #4CAF50;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #119b15;
+}
+
+ul {
+    color: #55bb58;
+}
+
+ul p {
+    color: black;
+}
+
+ol {
+    color: #55bb58;
+}
+
+ol p {
+    color: black;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+body, html {
+    height: 100%;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/heroImage.jpg");
+    height: 93.269%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
