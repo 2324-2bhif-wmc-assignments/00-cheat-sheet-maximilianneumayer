@@ -1,4 +1,4 @@
-body {
+body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background-color: white;
@@ -23,7 +23,26 @@ h1.overview {
     display: block;
     font-size: 2em;
     font-weight: bold;
+    text-indent: 15px;
     color: #4CAF50;
+}
+
+h2.topic {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #55bb58;
+    text-indent: 40px;
+}
+
+hr {
+    margin: 0;
+    background-color: #4CAF50;
+    height: 5px;
+}
+
+em {
+    color: #55bb58;
 }
 
 h3.question {
@@ -37,22 +56,18 @@ a {
     color: darkgreen;
 }
 
-/* width */
 ::-webkit-scrollbar {
     width: 15px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
     background: #4CAF50;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #119b15;
 }
@@ -73,7 +88,6 @@ ol p {
     color: black;
 }
 
-/* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
     overflow: hidden;
@@ -94,6 +108,29 @@ ol p {
 }
 
 .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.sectionnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.sectionnav a {
+    float: left;
+    color: white;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.sectionnav a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.sectionnav a.active {
     background-color: #4CAF50;
     color: white;
 }

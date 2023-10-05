@@ -14,19 +14,142 @@
     <a href="WorldWideWeb.html">WWW</a>
     <a href="Rest.html">Rest</a>
 </div>
+<div class="sectionnav">
+    <a href="#basics">Basics</a>
+    <a href="#HTML-Elements">HTML Elements</a>
+    <a href="#Attributes">Attributes</a>
+    <a href="#Headings">Headings</a>
+    <a href="#Paragraphs">Paragraphs</a>
+    <a href="#Comments">Comments</a>
+    <a href="#Links">Links</a>
+    <a href="#Images">Images</a>
+    <a href="#Head">Head</a>
+</div>
 
 <h1 class="overview">HTML</h1>
-<ul>
-    <li>
-        <h2 class="list-header">HTML Elements</h2>
+<hr>
+<dl>
+    <dt>
+        <section id="basics">
+        <h2 class="topic">Basics</h2>
+        </section>
+    </dt>
+    <dd>
+        <p>
+            An HTML document must start with a &lt;DOCTYPE html&gt; declaration and normally begins and ends with an &lt;html&gt;
+            The most commonly used tags are the &lt;head&gt; and &lt;body&gt; tag.
+            The visible part of the page is in &lt;body&gt; and the data which the browser need is in &lt;head&gt;.
+        </p>
+    </dd>
+    <dt>
+        <section id="HTML-Elements">
+        <h2 class="topic">HTML Elements</h2>
+        </section>
+    </dt>
+    <dd>
         <p>
             An HTML element is everything from the start tag to the end tag.
+            &lt;p&gt;<em>This is an element.</em>&lt;/p&gt;
+        </p>
+        <p>
             A tag like &lt;br&gt; is called a void element because it has no closing tag.
         </p>
-    </li>
-    <li>
+    </dd>
+    <dt>
+        <section id="Attributes">
+        <h2 class="topic">Attributes</h2>
+        </section>
+    </dt>
+    <dd>
+        <p>
+            All HTML elements can have attributes, which provide additional information about elements.
+            These attributes are specified in the start tag and usually look like this: <em>attributeName="attributeValue"</em>.
+        </p>
+        <p>
+            Examples:
+            <br>
+            &lt;a&gt; can have the <em>href</em> attribute. (The &lt;a&gt; tag defines a hyperlink)</p>
+        <p>
+            &lt;img&gt; tag is used to display an image in an HTML page. The <em>src</em> attribute specifies the path from which the image is displayed on the website.
+            The <em>width</em> and <em>height</em> attribute modify the width and height of the image.
+            And the <em>alt</em> attribute displays an alternative text if the image can't be shown.
+        </p>
+        <p>
+            The <em>lang</em> attribute from the &lt;html&gt; tag defines the language of the document.
+            There are also the <em>style</em> and <em>title</em> attributes, which can alter the color, font, size, and more(style) and display a tooltip(title in a paragraph)
+        </p>
+    </dd>
+    <dt>
+        <section id="Headings">
+        <h2 class="topic">Headings</h2>
+        </section>
+    </dt>
+    <dd>
+        <p>
+            Headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.
+            The headings from 1 to 6 get less and less important, while &lt;h1&gt; is the most important.
+        </p>
+        <p>Headings are used to index the content and structure of your web pages by search engines.</p>
+    </dd>
+    <dt>
+        <section id="Paragraphs">
+        <h2 class="topic">Paragraphs</h2>
+        </section>
+    </dt>
+    <dd>
+        <p>A new paragraph is defined by the &lt;p&gt; tag. Paragraphs always start on a new line with some white space (margin) before and after.</p>
+        <p>The browser will remove any extra spaces and lines in a paragraph, when the page is displayed.</p>
+        <p>There are also two void tags which are used in or between paragraphs. The &lt;br&gt; and the &lt;hr&gt; tags. </p>
+        <ul>
+            <li>
+                <p>The &lt;br&gt; tag defines a line break (carriage return) even in a paragraph.</p>
+            </li>
+            <li>
+                <p>The &lt;hr&gt; tag defines a thematic break in an HTML page and is most often displayed as a horizontal rule. It's most common use is to separate content.</p>
+            </li>
+        </ul>
+        <p>The &lt;pre&gt; element defines preformatted text. The text preserves both spaces and line breaks.</p>
+    </dd>
+    <dt>
+        <section id="Comments">
+        <h2 class="topic">Comments</h2>
+        </section>
+    </dt>
+    <dd>
+        <p>
 
-    </li>
-</ul>
+        </p>
+    </dd>
+    <dt>
+        <section id="Links">
+        <h2 class="topic">Links</h2>
+        </section>
+    </dt>
+    <dd>
+        <p>
+
+        </p>
+    </dd>
+    <dt>
+        <section id="Images">
+        <h2 class="topic">Images</h2>
+        </section>
+    </dt>
+    <dd>
+        <p>
+
+        </p>
+    </dd>
+    <dt>
+        <section id="Head">
+        <h2 class="topic">Head</h2>
+        </section>
+    </dt>
+    <dd>
+        <p>
+
+        </p>
+    </dd>
+</dl>
 </body>
 </html>
