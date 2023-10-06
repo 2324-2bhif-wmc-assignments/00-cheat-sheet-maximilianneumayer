@@ -53,6 +53,13 @@ h3.question {
     color: #55bb58;
 }
 
+h3.normal-header {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    color: #55bb58;
+}
+
 a {
     color: darkgreen;
 }
