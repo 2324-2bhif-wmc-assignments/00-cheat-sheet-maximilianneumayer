@@ -73,25 +73,12 @@ a {
     background: #119b15;
 }
 
-ul {
+ol, ul {
     color: #55bb58;
 }
 
-ul p {
+ol p, ul p {
     color: black;
-}
-
-ol {
-    color: #55bb58;
-}
-
-ol p {
-    color: black;
-}
-
-.topnav {
-    background-color: #333;
-    overflow: hidden;
 }
 
 .topnav a {
@@ -103,17 +90,7 @@ ol p {
     font-size: 17px;
 }
 
-.topnav a:hover {
-    background-color: #4CAF50;
-    color: white;
-}
-
-.topnav a.active {
-    background-color: #4CAF50;
-    color: white;
-}
-
-.sectionnav {
+.topnav, .sectionnav {
     background-color: #333;
     overflow: hidden;
 }
@@ -126,12 +103,7 @@ ol p {
     font-size: 15px;
 }
 
-.sectionnav a:hover {
-    background-color: #4CAF50;
-    color: white;
-}
-
-.sectionnav a.active {
+.topnav a.hover, .topnav a.active, .sectionnav a:hover, .sectionnav a.active {
     background-color: #4CAF50;
     color: white;
 }
