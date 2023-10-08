@@ -33,6 +33,9 @@ h2.topic {
     font-weight: bold;
     color: #55bb58;
     text-indent: 40px;
+    border-style: outset;
+    border-color: #55bb58;
+    border-radius: 5px;
 }
 
 hr {
