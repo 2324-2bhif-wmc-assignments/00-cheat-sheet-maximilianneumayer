@@ -44,7 +44,7 @@
         <p>The element selector selects HTML elements based on the element name.</p>
         <p>The grouping selector selects all the HTML elements with the same style definitions.</p>
         <h3 class="normal-header">CSS Comments Syntax</h3>
-        <p>CSS Comments start with /* and end with */. These comments can be put wherever you want in the code and they can reach over multiple lines.</p>
+        <p>CSS Comments start with /* and end with */. These comments can be put wherever you want in the code, and they can reach over multiple lines.</p>
     </dd>
     <dt>
     <section id="Colors">
@@ -203,7 +203,41 @@
     </section>
     </dt>
     <dd>
-
+        <h3 class="normal-header">CSS Combinators</h3>
+        <p>
+            A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+        </p>
+        <p>
+            There are 4 different combinators:
+            <br>
+        </p>
+        <ul>
+            <li>
+                <h4>descendant selector (space)</h4>
+                <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+                <img src="./images/DescendantCombinator_Example.png" alt="example of a Descendant Selector">
+            </li>
+            <li>
+                <h4>child selector (>)</h4>
+                <p>The child selector selects all elements that are the children of a specified element.</p>
+                <img src="./images/ChildrenCombinator_Example.png" alt="example of a child selector">
+            </li>
+            <li>
+                <h4>adjacent selector (+)</h4>
+                <p>
+                    The adjacent sibling selector is used to select an element that is directly after another specific element.
+                    Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+                </p>
+                <img src="./images/AdjacentSiblingCombinator.png" alt="example of a adjacent selector">
+            </li>
+            <li>
+                <h4>general sibling selector (~)</h4>
+                <p>
+                    The general sibling selector selects all elements that are next siblings of a specified element.
+                </p>
+                <img src="./images/GeneralSiblingCombinator.png" alt="example of a general sibling selector">
+            </li>
+        </ul>
     </dd>
     <dt>
     <section id="Pseudo-Classes">
@@ -211,7 +245,16 @@
     </section>
     </dt>
     <dd>
-
+        <h3 class="normal-header">General</h3>
+        <p>A pseudo-class is used to define a special state of an element.</p>
+        <h3 class="normal-header">Syntax</h3>
+        <img src="./images/Syntax_PseudoClass.png" alt="image of Syntax from pseudo classes">
+        <h3 class="normal-header">Anchor Pseudo-Class</h3>
+        <p>States of links: See Links description.</p>
+        <h3 class="normal-header">Hover on</h3>
+        <p>Hover on an element means, that when you hover over it, the properties of the class are shown. See tabs of this website.(when you hover of them they change color).</p>
+        <h3 class="normal-header">CSS - The :first-child Pseudo-class</h3>
+        <p>The <em>:first-child</em> pseudo-class matches a specified element that is the first child of another element.</p>
     </dd>
 </dl>
 </body>
