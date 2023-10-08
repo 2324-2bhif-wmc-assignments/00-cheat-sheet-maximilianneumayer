@@ -87,7 +87,7 @@
             You can also use this property to disable the repeat by typing this as value <em>no-repeat</em>. You can also use the property <em>background-position</em> to declare the position of the non-repeated background-image.
         </p>
         <h3 class="normal-header">Background-Image - Fixed position</h3>
-        <p></p>
+        <p>See above.</p>
     </dd>
     <dt>
     <section id="Text">
@@ -96,13 +96,27 @@
     </dt>
     <dd>
         <h3 class="normal-header">Text Color</h3>
-        <p></p>
+        <p>The <em>color</em> property lets you change the color of the text. (with color name, hex value or RGB value)</p>
         <h3 class="normal-header">Text Alignment</h3>
-        <p></p>
+        <p>
+            The <em>text-align</em> property is used to set the horizontal alignment of a text. The text can be left or right aligned, centered or justified.
+            The <em>text-align-last</em> property specifies how to align the last line of a text.
+        </p>
+        <p>The <em>direction</em> and <em>unicode-bidi</em> properties can be used to change the text direction of an element.</p>
+        <p>The <em>vertical-align</em> property sets the vertical alignment of an element.</p>
         <h3 class="normal-header">Text Decoration</h3>
-        <p></p>
+        <p>
+            The <em>text-decoration-line</em> property is used to add a decoration line to text. The <em>text-decoration-color</em> property sets the color of the decoration line.
+            The <em>text-decoration-style</em> property sets the style of decoration line.
+        </p>
+        <p>
+            The <em>text-decoration-thickness</em> property sets the thickness of the decoration line.
+        </p>
+        <p>
+            The <em>text-decoration</em> property is a short-hand-property for the properties listed above.
+        </p>
         <h3 class="normal-header">Text Transformation</h3>
-        <p></p>
+        <p>The <em>text-transform</em> property is used to specify uppercase and lowercase letters in a text. (can lowercase or uppercase everything or capitalize every first letter of a word)</p>
     </dd>
     <dt>
     <section id="Fonts">
@@ -111,13 +125,41 @@
     </dt>
     <dd>
         <h3 class="normal-header">Difference between Serif and Sans-Serif</h3>
-        <p></p>
+        <p>
+           Serif: small stroke at the edges of each letter (create formality and elegance)
+            <br>
+            Sans-Serif: clean lines (modern and minimalistic look)
+        </p>
+        <img src="./images/Serif_SansSerif_Difference.png" alt="Difference between Serif and Sans-Serif" width="356px">
         <h3 class="normal-header">Font Family</h3>
-        <p></p>
+        <p>
+            The <em>font-family</em> property is used to specify the font of a text. The <em>font-familiy</em> property normally holds multiple fonts ("fallback" system) to ensure maximum compatability between browsers/operating systems.
+        </p>
         <h3 class="normal-header">Font Style</h3>
-        <p></p>
+        <p>
+            The <em>font-style</em> property most commonly use is to specify italic text. The property has the three values: normal, oblique and italic. (text is shown normally; the text is "leaning"; the text is shown in italics)
+        </p>
         <h3 class="normal-header">Font Size</h3>
-        <p></p>
+        <p>
+            The <em>font-size</em> property sets the size of the text. The font size can be absolute or relative
+        </p>
+        <p>
+            Absolute: sets the text to a specific size; doesn't allow user to change the text size in all browsers; useful when physical size of output is known
+            <br>
+            Relative: sets the text size relative to surrounding elements; allows user to change the text in all browsers
+        </p>
+        <h3 class="normal-header">Set Font Size With Pixels</h3>
+        <p>
+            If you set the font size with pixels you have the full control over the size of the text.
+        </p>
+        <h3 class="normal-header">Set Font Size With Em</h3>
+        <p>
+            Allows users to resize text. 1em = current font size. Default text size is 16px. Still problems in older browsers, but is used by lots of developers. Formula: px/16=em.
+        </p>
+        <h3 class="normal-header">Font Weight</h3>
+        <p>
+            The <em>font-weight</em> property specifies the weight of a font. Value can be: normal, bold, lighter or a number like 800.
+        </p>
     </dd>
     <dt>
     <section id="Link">
@@ -125,7 +167,35 @@
     </section>
     </dt>
     <dd>
-
+        <h3 class="normal-header">Styling Links</h3>
+        <p>
+            Links can be styled with any CSS property, but in addition they can be styled depending on their state.
+        </p>
+        <p>
+            The four states a link can be in:
+            <br>
+        <ul>
+            <li>
+                <p>
+                    <em>a:link</em> - a normal, unvisited link
+                </p>
+            </li>
+            <li>
+                <p>
+                    <em>a:visited</em> - a link the user has visited
+                </p>
+            </li>
+            <li>
+                <p>
+                    <em>a:hover</em> - a link when the user mouses over it
+                </p>
+            </li>
+            <li>
+                <p>
+                    <em>a:active</em> - a link the moment it is clicked
+                </p>
+            </li>
+        </ul>
     </dd>
     <dt>
     <section id="Combinators">
