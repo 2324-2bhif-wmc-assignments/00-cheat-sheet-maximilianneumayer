@@ -33,9 +33,6 @@ h2.topic {
     font-weight: bold;
     color: #55bb58;
     text-indent: 40px;
-    border-style: outset;
-    border-color: #55bb58;
-    border-radius: 5px;
 }
 
 hr {
@@ -83,11 +80,11 @@ a {
     background: #119b15;
 }
 
-ol, ul {
+ol, ul, dl {
     color: #55bb58;
 }
 
-ol p, ul p {
+ol p, ul p, dl h2, dl h3, dd {
     color: black;
 }
 
