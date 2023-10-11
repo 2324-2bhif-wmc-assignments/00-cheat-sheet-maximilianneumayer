@@ -29,7 +29,7 @@ h1.overview {
 
 h2.topic {
     display: block;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     color: #55bb58;
     text-indent: 40px;
@@ -49,7 +49,7 @@ h3.question {
     display: block;
     font-size: 1em;
     font-weight: bold;
-    text-indent: 20px;
+    text-indent: 40px;
     color: #55bb58;
 }
 

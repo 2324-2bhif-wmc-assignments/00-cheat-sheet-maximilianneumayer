@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="./images/favicon.jpg">
-    <title>Title</title>
+    <title>Rest</title>
 </head>
 <body>
 <div class="topnav">
@@ -12,16 +12,24 @@
     <a href="HTML.html">HTML</a>
     <a href="CSS.html">CSS</a>
     <a href="WorldWideWeb.html">WWW</a>
-    <a class="active" href="Rest.html">Rest</a>
+    <a class="active" href="GeneralInformation.html">Rest</a>
 </div>
-<section id="Hello World">
-    <h2>Hello World</h2>
-    <ol>
-        <li>
+<div class="sectionnav">
+    <a href="#Hello-World">Hello World</a>
+    <a href="#html-info">HTML info</a>
+</div>
+<h1 class="overview">General Info</h1>
+<hr>
+
+<section id="Hello-World">
+    <h2 class="topic">Hello World</h2>
+    <dl>
+        <dt>
             <section id="head-element">
                 <h3 class="question">What is the html head element?</h3>
             </section>
-
+        </dt>
+        <dd>
             <p>The &lt;head&gt; element is a container for metadata. (data about the html document, which is not displayed)</p>
 
             <p>Elements which can go into the head element:</p>
@@ -49,18 +57,20 @@
                     <p>&lt;noscript&gt;</p>
                 </li>
             </ul>
-        </li>
-        <li>
+        </dd>
+        <dt>
             <h3 class="question">What does &lt;!DOCTYPE html&gt; mean?</h3>
-
+        </dt>
+        <dd>
             <p>
                 A html document needs to start with a &lt;!DOCTYPE html&gt; declaration.
                 This isn't a html tag, it is information to the browser which version of HTML the document is.
             </p>
-        </li>
-        <li>
+        </dd>
+        <dt>
             <h3 class="question">What are the two top most elements within the html element?</h3>
-
+        </dt>
+        <dd>
             <p>
                 The most common elements within the html element are:
             </p>
@@ -83,20 +93,22 @@
                     </p>
                 </dd>
             </dl>
-        </li>
-        <li>
+        </dd>
+        <dt>
             <h3 class="question">How to emphasize a text and how is it displayed in the browser?</h3>
-
+        </dt>
+        <dd>
             <p>
                 You can use the &lt;em&gt; element.
                 This element is used to add a semantic meaning to the text and indicate varying degrees of importance or emphasis.
                 The &lt;em&gt; element is used to emphasize text in a way that indicates a slight change in emphasis or importance.
                 By default, it is typically rendered in italics by browsers.
             </p>
-        </li>
-        <li>
+        </dd>
+        <dt>
             <h3 class="question">How to mark up important text and how is it displayed in the browser?</h3>
-
+        </dt>
+        <dd>
             <p>
                 You can use the &lt;mark&gt; element.
                 This element is used to highlight or mark text for emphasis, making it stand out visually.
@@ -108,21 +120,21 @@
 
                 It makes the text stand out more, by thickening the letters of the text in the &lt;strong&gt; tag.
             </p>
-        </li>
-    </ol>
+        </dd>
+    </dl>
 </section>
-<section id="html info">
-    <h2>html info</h2>
+<section id="html-info">
+    <h2 class="topic">html info</h2>
     <dl>
         <dt>
-            &lt;!DOCTYPE html&gt;
+            <h3 class="question">&lt;!DOCTYPE html&gt;</h3>
         </dt>
         <dd>
             An html document needs to start with a &lt;!DOCTYPE html &gt; declaration.
             This isn't a html tag, it is information to the browser about what type of document this is.
         </dd>
         <dt>
-            &lt;html&gt;
+            <h3 class="question">&lt;html&gt;</h3>
         </dt>
         <dd>
             <p>
@@ -132,7 +144,7 @@
             </p>
         </dd>
         <dt>
-            &lt;head&gt;
+            <h3 class="question">&lt;head&gt;</h3>
         </dt>
         <dd>
             The &lt;head&gt; element is a container for metadata. (data about the html document, which is not displayed)
@@ -164,7 +176,7 @@
             </ul>
         </dd>
         <dt>
-            &lt;meta&gt;
+            <h3 class="question">&lt;meta&gt;</h3>
         </dt>
         <dd>
             <p>
