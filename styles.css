@@ -52,29 +52,14 @@ a {
     color: darkgreen;
 }
 
-::-webkit-scrollbar {
-    width: 15px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #4CAF50;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #119b15;
-}
-
 ol, ul, dl {
     color: #55bb58;
 }
 
-ol p, ul p, dl h2, dl h3, dd {
+p, h2, dl h3, dd {
     color: black;
 }
+
 
 .topnav a {
     float: left;
@@ -83,9 +68,15 @@ ol p, ul p, dl h2, dl h3, dd {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    transition: 500ms;
 }
 
-.topnav, .sectionnav {
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.sectionnav {
     background-color: #333;
     overflow: hidden;
 }
@@ -98,13 +89,14 @@ ol p, ul p, dl h2, dl h3, dd {
     font-size: 15px;
 }
 
-.topnav a.hover, .topnav a.active, .sectionnav a:hover, .sectionnav a.active {
+.topnav a:hover, .topnav a.active, .sectionnav a:hover, .sectionnav a.active {
     background-color: #4CAF50;
     color: white;
 }
 
 body, html {
     height: 100%;
+    margin: 0;
 }
 
 .hero-image {

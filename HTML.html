@@ -7,159 +7,159 @@
     <title>HTML</title>
 </head>
 <body>
-<div class="topnav">
-    <a href="index.html">Home</a>
-    <a class="active" href="HTML.html">HTML</a>
-    <a href="CSS.html">CSS</a>
-    <a href="WorldWideWeb.html">WWW</a>
-    <a href="GeneralInformation.html">Rest</a>
-</div>
-<div class="sectionnav">
-    <a href="#basics">Basics</a>
-    <a href="#HTML-Elements">HTML Elements</a>
-    <a href="#Attributes">Attributes</a>
-    <a href="#Headings">Headings</a>
-    <a href="#Paragraphs">Paragraphs</a>
-    <a href="#Comments">Comments</a>
-    <a href="#Links">Links</a>
-    <a href="#Images">Images</a>
-    <a href="#Head">Head</a>
-</div>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a class="active" href="HTML.html">HTML</a>
+        <a href="CSS.html">CSS</a>
+        <a href="WorldWideWeb.html">WWW</a>
+        <a href="GeneralInformation.html">Rest</a>
+    </div>
+    <div class="sectionnav">
+        <a href="#basics">Basics</a>
+        <a href="#HTML-Elements">HTML Elements</a>
+        <a href="#Attributes">Attributes</a>
+        <a href="#Headings">Headings</a>
+        <a href="#Paragraphs">Paragraphs</a>
+        <a href="#Comments">Comments</a>
+        <a href="#Links">Links</a>
+        <a href="#Images">Images</a>
+        <a href="#Head">Head</a>
+    </div>
 
-<h1 class="overview">HTML</h1>
-<hr>
-<dl>
-    <dt>
-        <section id="basics">
-        <h2 class="topic">Basics</h2>
-        </section>
-    </dt>
-    <dd>
-        <p>
-            An HTML document must start with a &lt;DOCTYPE html&gt; declaration and normally begins and ends with an &lt;html&gt;
-            The most commonly used tags are the &lt;head&gt; and &lt;body&gt; tag.
-            The visible part of the page is in &lt;body&gt; and the data which the browser need is in &lt;head&gt;.
-        </p>
-    </dd>
-    <dt>
-        <section id="HTML-Elements">
-        <h2 class="topic">HTML Elements</h2>
-        </section>
-    </dt>
-    <dd>
-        <p>
-            An HTML element is everything from the start tag to the end tag.
-            &lt;p&gt;<em>This is an element.</em>&lt;/p&gt;
-        </p>
-        <p>
-            A tag like &lt;br&gt; is called a void element because it has no closing tag.
-        </p>
-    </dd>
-    <dt>
-        <section id="Attributes">
-        <h2 class="topic">Attributes</h2>
-        </section>
-    </dt>
-    <dd>
-        <p>
-            All HTML elements can have attributes, which provide additional information about elements.
-            These attributes are specified in the start tag and usually look like this: <em>attributeName="attributeValue"</em>.
-        </p>
-        <p>
-            Examples:
-            <br>
-            &lt;a&gt; can have the <em>href</em> attribute. (The &lt;a&gt; tag defines a hyperlink)</p>
-        <p>
-            &lt;img&gt; tag is used to display an image in an HTML page. The <em>src</em> attribute specifies the path from which the image is displayed on the website.
-            The <em>width</em> and <em>height</em> attribute modify the width and height of the image.
-            And the <em>alt</em> attribute displays an alternative text if the image can't be shown.
-        </p>
-        <p>
-            The <em>lang</em> attribute from the &lt;html&gt; tag defines the language of the document.
-            There are also the <em>style</em> and <em>title</em> attributes, which can alter the color, font, size, and more(style) and display a tooltip(title in a paragraph)
-        </p>
-    </dd>
-    <dt>
-        <section id="Headings">
-        <h2 class="topic">Headings</h2>
-        </section>
-    </dt>
-    <dd>
-        <p>
-            Headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.
-            The headings from 1 to 6 get less and less important, while &lt;h1&gt; is the most important.
-        </p>
-        <p>Headings are used to index the content and structure of your web pages by search engines.</p>
-    </dd>
-    <dt>
-        <section id="Paragraphs">
-        <h2 class="topic">Paragraphs</h2>
-        </section>
-    </dt>
-    <dd>
-        <p>A new paragraph is defined by the &lt;p&gt; tag. Paragraphs always start on a new line with some white space (margin) before and after.</p>
-        <p>The browser will remove any extra spaces and lines in a paragraph, when the page is displayed.</p>
-        <p>There are also two void tags which are used in or between paragraphs. The &lt;br&gt; and the &lt;hr&gt; tags. </p>
-        <ul>
-            <li>
-                <p>The &lt;br&gt; tag defines a line break (carriage return) even in a paragraph.</p>
-            </li>
-            <li>
-                <p>The &lt;hr&gt; tag defines a thematic break in an HTML page and is most often displayed as a horizontal rule. It's most common use is to separate content.</p>
-            </li>
-        </ul>
-        <p>The &lt;pre&gt; element defines preformatted text. The text preserves both spaces and line breaks.</p>
-    </dd>
-    <dt>
-        <section id="Comments">
-        <h2 class="topic">Comments</h2>
-        </section>
-    </dt>
-    <dd>
-        <p>You can add comments by using &lt;!-- <em>This is a comment</em> --&gt; this syntax.</p>
-        <p>The ! is only used in the start tag.</p>
-        <p>Comments can be used to hide content and they can be set over multiple lines.</p>
-    </dd>
-    <dt>
-        <section id="Links">
-        <h2 class="topic">Links</h2>
-        </section>
-    </dt>
-    <dd>
-        <p>
-            The &lt;a&gt; tag defines a hyperlink. The most important attribute of &lt;a&gt; is <em>href</em>. It indicates the link's destination.
-        </p>
-        <p>When you click on the links you are sent to the specified URL.</p>
-        <p>Another attribute of &lt;a&gt; is <em>target</em>.</p>
-        <p>Values that the <em>target</em> attribute can have: <em>_self _blank _parent _top</em>.</p>
-        <p>You can nearly make everything to a link via &lt;a&gt;.</p>
-        <p>For even more info look at <a href="https://www.w3schools.com/html/html_links.asp">w3schools</a>.</p>
-    </dd>
-    <dt>
-        <section id="Images">
-        <h2 class="topic">Images</h2>
-        </section>
-    </dt>
-    <dd>
-        <p>
-            Images can improve the design and the appearance of a web page. The &lt;image&gt; tag is used to embed an image. An image isn't inserted, it is linked to the webpage. This tag is a void tag. It only contains attributes.
-            When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it into the page.
-        </p>
-        <p>The two required attributes are <em>src</em> (specifies path to image) and <em>alt</em> (Specifies an alternate text for the image)</p>
-        <p>Images can also have the attribute <em>height</em> and <em>width</em>, which change the height and width of the image. (you should still do this in you stylesheet)</p>
-    </dd>
-    <dt>
-        <section id="Head">
-        <h2 class="topic">Head</h2>
-        </section>
-    </dt>
-    <dd>
-        <p>
-            The &lt;head&gt; element is a container for the elements &lt;title&gt;, &lt;style&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;scrpit&gt; and &lt;base&gt;.
-            All in all the &lt;head&gt; element is a container for metadata (data about data). It is between the &lt;html&gt; start tag and the &lt;body&gt; start tag.
-        </p>
-        <p>The data from the &lt;head&gt; element is not displayed. It is only used by the browser for info.</p>
-    </dd>
-</dl>
+    <h1 class="overview">HTML</h1>
+    <hr>
+    <dl>
+        <dt>
+            <section id="basics">
+            <h2 class="topic">Basics</h2>
+            </section>
+        </dt>
+        <dd>
+            <p>
+                An HTML document must start with a &lt;DOCTYPE html&gt; declaration and normally begins and ends with an &lt;html&gt;
+                The most commonly used tags are the &lt;head&gt; and &lt;body&gt; tag.
+                The visible part of the page is in &lt;body&gt; and the data which the browser need is in &lt;head&gt;.
+            </p>
+        </dd>
+        <dt>
+            <section id="HTML-Elements">
+            <h2 class="topic">HTML Elements</h2>
+            </section>
+        </dt>
+        <dd>
+            <p>
+                An HTML element is everything from the start tag to the end tag.
+                &lt;p&gt;<em>This is an element.</em>&lt;/p&gt;
+            </p>
+            <p>
+                A tag like &lt;br&gt; is called a void element because it has no closing tag.
+            </p>
+        </dd>
+        <dt>
+            <section id="Attributes">
+            <h2 class="topic">Attributes</h2>
+            </section>
+        </dt>
+        <dd>
+            <p>
+                All HTML elements can have attributes, which provide additional information about elements.
+                These attributes are specified in the start tag and usually look like this: <em>attributeName="attributeValue"</em>.
+            </p>
+            <p>
+                Examples:
+                <br>
+                &lt;a&gt; can have the <em>href</em> attribute. (The &lt;a&gt; tag defines a hyperlink)</p>
+            <p>
+                &lt;img&gt; tag is used to display an image in an HTML page. The <em>src</em> attribute specifies the path from which the image is displayed on the website.
+                The <em>width</em> and <em>height</em> attribute modify the width and height of the image.
+                And the <em>alt</em> attribute displays an alternative text if the image can't be shown.
+            </p>
+            <p>
+                The <em>lang</em> attribute from the &lt;html&gt; tag defines the language of the document.
+                There are also the <em>style</em> and <em>title</em> attributes, which can alter the color, font, size, and more(style) and display a tooltip(title in a paragraph)
+            </p>
+        </dd>
+        <dt>
+            <section id="Headings">
+            <h2 class="topic">Headings</h2>
+            </section>
+        </dt>
+        <dd>
+            <p>
+                Headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.
+                The headings from 1 to 6 get less and less important, while &lt;h1&gt; is the most important.
+            </p>
+            <p>Headings are used to index the content and structure of your web pages by search engines.</p>
+        </dd>
+        <dt>
+            <section id="Paragraphs">
+            <h2 class="topic">Paragraphs</h2>
+            </section>
+        </dt>
+        <dd>
+            <p>A new paragraph is defined by the &lt;p&gt; tag. Paragraphs always start on a new line with some white space (margin) before and after.</p>
+            <p>The browser will remove any extra spaces and lines in a paragraph, when the page is displayed.</p>
+            <p>There are also two void tags which are used in or between paragraphs. The &lt;br&gt; and the &lt;hr&gt; tags. </p>
+            <ul>
+                <li>
+                    <p>The &lt;br&gt; tag defines a line break (carriage return) even in a paragraph.</p>
+                </li>
+                <li>
+                    <p>The &lt;hr&gt; tag defines a thematic break in an HTML page and is most often displayed as a horizontal rule. It's most common use is to separate content.</p>
+                </li>
+            </ul>
+            <p>The &lt;pre&gt; element defines preformatted text. The text preserves both spaces and line breaks.</p>
+        </dd>
+        <dt>
+            <section id="Comments">
+            <h2 class="topic">Comments</h2>
+            </section>
+        </dt>
+        <dd>
+            <p>You can add comments by using &lt;!-- <em>This is a comment</em> --&gt; this syntax.</p>
+            <p>The ! is only used in the start tag.</p>
+            <p>Comments can be used to hide content and they can be set over multiple lines.</p>
+        </dd>
+        <dt>
+            <section id="Links">
+            <h2 class="topic">Links</h2>
+            </section>
+        </dt>
+        <dd>
+            <p>
+                The &lt;a&gt; tag defines a hyperlink. The most important attribute of &lt;a&gt; is <em>href</em>. It indicates the link's destination.
+            </p>
+            <p>When you click on the links you are sent to the specified URL.</p>
+            <p>Another attribute of &lt;a&gt; is <em>target</em>.</p>
+            <p>Values that the <em>target</em> attribute can have: <em>_self _blank _parent _top</em>.</p>
+            <p>You can nearly make everything to a link via &lt;a&gt;.</p>
+            <p>For even more info look at <a href="https://www.w3schools.com/html/html_links.asp">w3schools</a>.</p>
+        </dd>
+        <dt>
+            <section id="Images">
+            <h2 class="topic">Images</h2>
+            </section>
+        </dt>
+        <dd>
+            <p>
+                Images can improve the design and the appearance of a web page. The &lt;image&gt; tag is used to embed an image. An image isn't inserted, it is linked to the webpage. This tag is a void tag. It only contains attributes.
+                When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it into the page.
+            </p>
+            <p>The two required attributes are <em>src</em> (specifies path to image) and <em>alt</em> (Specifies an alternate text for the image)</p>
+            <p>Images can also have the attribute <em>height</em> and <em>width</em>, which change the height and width of the image. (you should still do this in you stylesheet)</p>
+        </dd>
+        <dt>
+            <section id="Head">
+            <h2 class="topic">Head</h2>
+            </section>
+        </dt>
+        <dd>
+            <p>
+                The &lt;head&gt; element is a container for the elements &lt;title&gt;, &lt;style&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;scrpit&gt; and &lt;base&gt;.
+                All in all the &lt;head&gt; element is a container for metadata (data about data). It is between the &lt;html&gt; start tag and the &lt;body&gt; start tag.
+            </p>
+            <p>The data from the &lt;head&gt; element is not displayed. It is only used by the browser for info.</p>
+        </dd>
+    </dl>
 </body>
 </html>
