@@ -4,56 +4,50 @@ body{
 }
 
 strong.important {
-    color: #119b15;
+    color: #3cb9ff;
 }
 
 h1.overview {
     display: block;
     font-size: 2em;
     font-weight: bold;
-    text-indent: 15px;
-    color: #4CAF50;
+    color: #33c1ff;
 }
 
 h2.topic {
     display: block;
-    font-size: 25px;
+    font-size: 1.7rem;
     font-weight: bold;
-    color: #55bb58;
-    text-indent: 40px;
-}
-
-hr {
-    margin: 0;
-    background-color: #4CAF50;
-    height: 5px;
+    color: #3cb9ff;
+    border-left: 0.25rem solid #3cb9ff;
+    padding-left: 0.25rem;
+    background-color: rgba(60, 185, 255, 0.2);
 }
 
 em {
-    color: #55bb58;
+    color: #3cb9ff;
 }
 
 h3.question {
     display: block;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: bold;
-    text-indent: 40px;
-    color: #55bb58;
+    color: #3cb9ff;
 }
 
 h3.normal-header {
     display: block;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: bold;
-    color: #55bb58;
+    color: #3cb9ff;
 }
 
 a {
-    color: darkgreen;
+    color: #004a88;
 }
 
 ol, ul, dl {
-    color: #55bb58;
+    color: #3cb9ff;
 }
 
 p, h2, dl h3, dd {
@@ -65,9 +59,9 @@ p, h2, dl h3, dd {
     float: left;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0.80rem 1rem;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1rem;
     transition: 500ms;
 }
 
@@ -84,13 +78,13 @@ p, h2, dl h3, dd {
 .sectionnav a {
     float: left;
     color: white;
-    padding: 10px 12px;
+    padding: 0.60rem 0.75rem;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .topnav a:hover, .topnav a.active, .sectionnav a:hover, .sectionnav a.active {
-    background-color: #4CAF50;
+    background-color: #33c1ff;
     color: white;
 }
 
@@ -123,4 +117,14 @@ p.hero-underlinetext {
     left: 50%;
     transform: translate(-40%, -40%);
     color: #d9d9d9;
+}
+
+img.example {
+    width: 15rem;
+}
+
+table, td{
+    border: 0.2rem solid #3cb9ff;
+    border-collapse: collapse;
+    background-color: #eaf5f8;
 }
