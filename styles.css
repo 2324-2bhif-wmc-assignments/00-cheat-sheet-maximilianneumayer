@@ -1,6 +1,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
+    margin: 0;
 }
 
 strong.important {
@@ -93,8 +94,8 @@ body, html {
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/heroImage.jpg");
-    height: 93.269%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/heroImage.png");
+    height: 93.83%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
