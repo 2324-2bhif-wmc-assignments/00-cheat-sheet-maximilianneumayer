@@ -2,33 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link type="text/css" rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="./images/favicon.jpg">
-    <title>WorldWideWeb</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./images/WWW.png">
+    <title>World Wide Web</title>
 </head>
-<body>
-    <div class="topnav">
+<body class="greyBG animateBG noBorder">
+    <nav class="navbar blur bottom">
         <a href="index.html">Home</a>
-        <a href="HTML.html">HTML</a>
-        <a href="CSS.html">CSS</a>
-        <a class="active" href="WorldWideWeb.html">WWW</a>
-        <a href="GeneralInformation.html">General</a>
-    </div>
-    <div class="sectionnav">
-        <a href="#World-Wide-Web-General">World Wide Web General</a>
-        <a href="#Web-Server">Web Server</a>
-        <a href="#Web-Client">Web Client</a>
-    </div>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="javascript.html">JS</a>
+        <a href="WWW.html">WWW</a>
+    </nav>
 
-    <h1 class="overview">World Wide Web</h1>
+    <nav class="navbar blur">
+        <a href="#www_general">General</a>
+        <a href="#web_server">Web Server</a>
+        <a href="#web_client">Web Client</a>
+        <a href="#test_answers">Test Answers</a>
+    </nav>
 
-    <section id="World-Wide-Web-General">
-        <h2 class="topic">Word Wide Web General</h2>
+    <article>
+        <section>
+            <h1 class="greyGlow">World Wide Web</h1>
 
-                <h3 class="question">What are the most essential technologies that made the World Wide Web such a success?</h3>
-                <p><strong class="important">URL</strong> (uniform resource locator), which is the addressing scheme to find a document.</p>
-                <p><strong class="important">HTTP</strong> (hypertext transfer protocol), The Hypertext Transfer Protocol is an application protocol for distributed, collaborative, hypermedia information systems that allows users to communicate data on the World Wide Web. Methods: GET, PUT, POST, HEAD, DELETE, TRACE</p>
-                <p><strong class="important">HTML</strong> (hypertext markup language), which formats pages containing hypertext links. HTML also is the set of markup symbols or codes inserted into a file, which is meant to be displayed on the internet. HTML gives browsers the information on how to display a web page's words and images.</p>
+            <section id="www_general" class="block">
+                <h2 class="underline">Word Wide Web General</h2>
+
+                <h3>What are the most essential technologies that made the World Wide Web such a success?</h3>
+                <p><strong>URL</strong> (uniform resource locator), which is the addressing scheme to find a document.</p>
+                <p><strong>HTTP</strong> (hypertext transfer protocol), The Hypertext Transfer Protocol is an application protocol for distributed, collaborative, hypermedia information systems that allows users to communicate data on the World Wide Web. Methods: GET, PUT, POST, HEAD, DELETE, TRACE</p>
+                <p><strong>HTML</strong> (hypertext markup language), which formats pages containing hypertext links. HTML also is the set of markup symbols or codes inserted into a file, which is meant to be displayed on the internet. HTML gives browsers the information on how to display a web page's words and images.</p>
                 <p>
                     The above three are the most essential.
                     <br>
@@ -40,33 +44,33 @@
                     <br>
                     Web Client, a browser which the user uses to request html-files from the Web Server
                 </p>
-                <h3 class="question">How are resources (html pages, images, etc.) addressed in the web?</h3>
+                <h3>How are resources (html pages, images, etc.) addressed in the web?</h3>
                 <p>
                     Resources in the web are normally addressed via URLs (uniform resource locator).
                     URLs describe the specific location of a resource on a particular server.
                     They tell you exactly how to fetch a resource from a precise, fixed location.
                 </p>
-                <h3 class="question">What are the general components of an url?</h3>
+                <h3>What are the general components of an url?</h3>
                 <p>
                     A URL typically has 9 parts, the protocol (or scheme), subdomain, domain name, top level domain, port, path, query, parameters, and fragment.
                     But the 2 general components of a URL, are the scheme and the domain name (server). These two are needed in every URL.
                 </p>
-    </section>
-    <section id="Web-Server">
-        <h2 class="topic">Web Server</h2>
-                <h3 class="question">What is a web server?</h3>
+            </section>
+            <section id="web_server" class="block">
+                <h2 class="underline">Web Server</h2>
+                <h3>What is a web server?</h3>
                 <p>It stores HTML files and related resources, It delivers web pages to clients, It executes code to generate HTML pages on the fly, It reacts upon a request of a web client</p>
                 <p>
                     A web server is a software application or hardware device that serves as the foundation of the World Wide Web.
                     It hosts and delivers web content to clients (normally web browsers). It's main purpose is to handle incoming requests for web resources (HTML pages, images, CSS files, JS files) and respond by handing out the requested date to the users over the internet.
                 </p>
-                <h3 class="question">What does a web server?</h3>
+                <h3>What does a web server?</h3>
                 <p>
                     A web server's primarily use is to process and manage HTTP and HTTPS requests and respond accordingly to them.
                     It also serves and manages web content, allowing users to access websites and web applications over the internet.
                     A web server can also accept and store resources sent from the user agent if configured to do so.
                 </p>
-                <h3 class="question">How can content be stored on a web server?</h3>
+                <h3>How can content be stored on a web server?</h3>
                 <p>
                     Content can be stored in different ways.
                     Here are some examples:
@@ -98,7 +102,7 @@
                         </p>
                     </li>
                 </ul>
-                <h3 class="question">How is content in webpages described?</h3>
+                <h3>How is content in webpages described?</h3>
 
                 <p>
                     The content on webpages is described, structured and formatted primarily by HTML, CSS and JavaScript.
@@ -106,16 +110,16 @@
                     CSS (Cascading Style Sheets): CSS is used to describe the presentation and styling of HTML elements.
                     JavaScript: JavaScript adds interactivity and behaviour to webpages.
                 </p>
-    </section>
-    <section id="Web-Client">
-        <h2 class="topic">Web Client</h2>
-                <h3 class="question">What is a web client?</h3>
+            </section>
+            <section class="block">
+                <h2 id="web_client" class="underline">Web Client</h2>
+                <h3>What is a web client?</h3>
                 <p>
                     A web client is used for connecting to a web server over HTTP. It requests and retrieves information or resources form web servers on the World Wide Web.
                     Typically, it's a web browser like chrome or edge, which displays web pages from the server and also allows the user to interact with the web server.
                     Sometimes a web client is referred to as user agent.
                 </p>
-                <h3 class="question">What does a web client?</h3>
+                <h3>What does a web client?</h3>
                 <p>
                     A web client interacts with web servers to retrieve and display content to users.
                 </p>
@@ -163,7 +167,7 @@
                 <p>
                     All in all a web client or user agent enables users to interact with the World Wide Web. It handles requests and responses, renders web content, executes scripts, gives a user interface, and ensures a secure and user-friendly web browsing experience.
                 </p>
-                <h3 class="question">Web Client and Web Browser is the same</h3>
+                <h3>Web Client and Web Browser is the same</h3>
                 <p>No, web clients and web browsers aren't the same, even though they are often referred as the same.</p>
 
                 <p>
@@ -176,57 +180,62 @@
                     Web browsers are optimized for viewing HTML, CSS and JavaScript content. They also provide a graphical interface to navigate around the world wide web.
                     An example for a web browser would be chrome or edge.
                 </p>
-                <h3 class="question">Web Client functionality</h3>
-                <p>It renders HTML pages,
+            </section>
+            <section id="test_answers" class="block">
+                <h2 class="underline">Test Answers</h2>
+                <h3>Web Client functionality</h3>
+                    <p>It renders HTML pages,
 
-                    It requests new web content upon user requests,
+                        It requests new web content upon user requests,
 
-                    A web browser is a web client</p>
-                <h3 class="question">Web Server functionality</h3>
-                <p>It stores HTML files and related resources, It delivers web pages to clients, It executes code to generate HTML pages on the fly, It reacts upon a request of a web client</p>
-                <h3 class="question">Content of HTTP request header</h3>
-                <p>
-                    status code,
+                        A web browser is a web client</p>
+                    <h3>Web Server functionality</h3>
+                    <p>It stores HTML files and related resources, It delivers web pages to clients, It executes code to generate HTML pages on the fly, It reacts upon a request of a web client</p>
+                    <h3>Content of HTTP request header</h3>
+                    <p>
+                        status code,
 
-                    method,
+                        method,
 
-                    Accept-Language,
+                        Accept-Language,
 
-                    Cookie,
+                        Cookie,
 
-                    User-Agent
-                </p>
-                <h3 class="question">status codes</h3>
-                <p>
-                    200 OK <br>
-                    300 redirect <br>
-                    400 error (404 not found, 418 I'm a teapot)<br>
-                    500 internal/local
-                </p>
-                <h3 class="question">How does a web server provide content?</h3>
-                <p>
-                    It takes it from its file system, It generates it by programs, It generates it by programs using data from a data base
-                </p>
-                <h3 class="question">HTTP correct statements</h3>
-                <p>
-                    Is a protocol,
+                        User-Agent
+                    </p>
+                    <h3>status codes</h3>
+                    <p>
+                        200 OK <br>
+                        300 redirect <br>
+                        400 error (404 not found, 418 I'm a teapot)<br>
+                        500 internal/local
+                    </p>
+                    <h3>How does a web server provide content?</h3>
+                    <p>
+                        It takes it from its file system, It generates it by programs, It generates it by programs using data from a data base
+                    </p>
+                    <h3>HTTP correct statements</h3>
+                    <p>
+                        Is a protocol,
 
-                    is used for transferring hypertext,
+                        is used for transferring hypertext,
 
-                    the header is human readable ("text"),
+                        the header is human readable ("text"),
 
-                    defines several methods, such as GET, PUT, POST,
+                        defines several methods, such as GET, PUT, POST,
 
-                    is able to transfer binary data
-                </p>
-                <h3 class="question">How are resources addressed in the web?</h3>
-                <p>URL</p>
-                <h3 class="question">How is content in webpages described?</h3>
-                <p>HTML</p>
-                <h3 class="question">Answer of a web server to an HTTP request</h3>
-                <p>
-                    HTTP response
-                </p>
-    </section>
+                        is able to transfer binary data
+                    </p>
+                    <h3>How are resources addressed in the web?</h3>
+                    <p>URL</p>
+                    <h3>How is content in webpages described?</h3>
+                    <p>HTML</p>
+                    <h3>Answer of a web server to an HTTP request</h3>
+                    <p>
+                        HTTP response
+                    </p>
+            </section>
+        </section>
+    </article>
 </body>
 </html>
