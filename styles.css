@@ -348,3 +348,7 @@ div.outerLine {
 body:last-child {
     padding-bottom: 3rem;
 }
+
+img {
+    border-radius: 2rem;
+}

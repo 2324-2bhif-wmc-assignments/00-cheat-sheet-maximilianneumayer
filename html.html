@@ -127,9 +127,9 @@
             </p>
             <p>The data from the &lt;head&gt; element is not displayed. It is only used by the browser for info.</p>
             </section>
-            <section id="Lists">
+            <section id="Lists" class="block">
                 <h2 class="underline">Lists</h2>
-                <table class="normalTable block">
+                <table class="normalTable">
                     <thead>
                     <tr>
                         <th>Kind of List</th>
@@ -169,23 +169,23 @@
                 </table>
 
                 <section class="block">
-                    <h2 class="topic">Ordered List</h2>
+                    <h2 class="underline">Ordered List</h2>
                     <img src="./images/OrderedList_Example.png" alt="Image of an Ordered List as Code" class="example" id="OrderedListExample">
                     <img src="./images/OrderedList_HTML_OUTPUT.png" alt="Image of an Ordered List" class="example">
                 </section>
                 <section class="block">
-                    <h2 class="topic">Unordered List</h2>
+                    <h2 class="underline">Unordered List</h2>
                     <img src="./images/UnorderedList_Example.png" alt="Image of an Unordered List as Code" class="example" id="UnorderedListExample">
                     <img src="./images/UnorderedList_HTML_OUTPUT.png" alt="Image of an Unordered List" class="example">
                 </section>
                 <section class="block">
-                    <h2 class="topic">Description List</h2>
+                    <h2 class="underline">Description List</h2>
                     <img src="./images/DescriptionList_Example.png" alt="Image of an Description List as Code" class="example" id="DescriptionListExample">
                     <img src="./images/DescriptionList_HTML_OUTPUT.png" alt="Image of an Description List" class="example">
                 </section>
 
                 <section class="block">
-                    <h2 class="topic">Margin and Padding</h2>
+                    <h2 class="underline">Margin and Padding</h2>
                     <h3 class="normal-header">General</h3>
                     <p>Margin and Padding can only be applied to block elements like &lt;p&gt;. Margin is outside the border, while padding is inside the border, but outside the content. (See picture)</p>
                     <img src="./images/MarginBorderPadding.png" alt="picture of Margin, Border and Padding">
@@ -193,6 +193,40 @@
                     <p>There are block- and inline-elements which differ greatly. Also other elements like img exist which are kinda special inline elements. But we will get back to it later.</p>
                     <span>Block elements can be assigned a margin and padding in every direction, while an inline element can only get a right and left margin or padding. You can make an inline element a block element with the css property <em>display:block</em></span>
                 </section>
+            </section>
+            <section class="block">
+                <h2 class="underline">Animation</h2>
+                <p>
+                    The animation property is specified as one or more single animations, separated by commas.
+                    An animation has keyframes. These keyframes are special moments. For example a keyframe can be at 0% and another one can be at 50%. Then the animation goes from the values which are declared in 0% to 50%. If you add a keyframe of 25% to the animation it goes from 0% to 25% to 50%.
+                    You can change the position of something in the animation or change its values. Example of an animation.
+                </p>
+                <pre>
+                    @keyframes myAnimation
+                    {
+                        0% {
+                            width: 100px;
+                            height: 100px;
+                        }
+                        50% {
+                            width: 200px;
+                            height: 200px;
+                        }
+                        100% {
+                            width: 1000px;
+                            height: 2000px;
+                        }
+                    }
+
+                    img {
+                        animation: 1s linear infinite myAnimation;
+                    }
+                </pre>
+
+                <p>
+                    In the example above an image starts at 100px * 100px (0%) then it goes to 50% where the image is already at 200px * 200px. When the animation reaches 100% it has the size 1000px*2000px. This happens over the time of 5 seconds because we said it in the css-rule of image. It is also repeated infinitely. The image starts at 0% when after the animation reaches 100%.
+                </p>
+                <p>An animation can have a lot values which can be assigned with multiple propertys, but with the animation property everything can be assigned at once.</p>
             </section>
     </article>
 </div>
