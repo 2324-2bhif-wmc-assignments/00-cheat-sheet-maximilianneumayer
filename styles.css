@@ -87,6 +87,13 @@ body, h1 {
     transition: 1s;
 }
 
+.purpleBG {
+    box-shadow: 0 0 0 0 rebeccapurple;
+    border: 1px solid rebeccapurple;
+    border-radius: 1rem;
+    transition: 1s;
+}
+
 .greyBG {
     box-shadow: 0 0 0 0 dimgray;
     border: 1px solid dimgray;
@@ -108,6 +115,12 @@ body, h1 {
 
 .container .yellowBG:hover {
     box-shadow: 10px 10px 20px 10px yellow;
+    transition: 1s;
+    animation: 30s moveBG linear infinite;
+}
+
+.container .purpleBG:hover {
+    box-shadow: 10px 10px 20px 10px rebeccapurple;
     transition: 1s;
     animation: 30s moveBG linear infinite;
 }
