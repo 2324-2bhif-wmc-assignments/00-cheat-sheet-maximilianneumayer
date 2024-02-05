@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./images/BOOTSTRAP.png">
+    <title>Bootstrap</title>
+</head>
+<body class="purpleBG noBorder animateBG">
+<nav class="navbar blur bottom">
+    <a class="navbar-brand" href="index.html">
+        <img src="./images/faviconHome.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        HOME
+    </a>
+    <a class="navbar-brand" href="html.html">
+        <img src="./images/HTML.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        HTML
+    </a>
+    <a class="navbar-brand" href="css.html">
+        <img src="./images/CSS.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        CSS
+    </a>
+    <a class="navbar-brand" href="javascript.html">
+        <img src="./images/JS.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        JS
+    </a>
+    <a class="navbar-brand" href="bootstrap.html">
+        <img src="./images/BOOTSTRAP.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Bootstrap
+    </a>
+    <a class="navbar-brand" href="WWW.html">
+        <img src="./images/WWW.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        WWW
+    </a>
+</nav>
+<nav class="navbar blur">
+    <a href="#containers">Containers</a>
+    <a href="#Typography">Typography</a>
+    <a href="#highlighted-text">Text</a>
+    <a href="#alignment">Alignment</a>
+    <a href="#transformation">Transformation</a>
+    <a href="#floating">Floating</a>
+    <a href="#blockquotes">Blockquotes</a>
+    <a href="#lists">Lists</a>
+    <a href="#colors">Colors</a>
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            More
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#buttons">Buttons</a>
+            <a class="dropdown-item" href="#tables">Tables</a>
+            <a class="dropdown-item" href="#cards">Cards</a>
+            <a class="dropdown-item" href="#Grids">Grids</a>
+            <a class="dropdown-item" href="#images-figures">Images and Figures</a>
+            <a class="dropdown-item" href="#carousel">Carousel</a>
+            <a class="dropdown-item" href="#alerts">Alerts</a>
+            <a class="dropdown-item" href="#dropdowns">Dropdowns</a>
+            <a class="dropdown-item" href="#badges">Badges</a>
+            <a class="dropdown-item" href="#Pagination">Pagination</a>
+            <a class="dropdown-item" href="#forms">Forms</a>
+        </div>
+    </div>
+</nav>
+
+<div class="outerLine">
+    <article>
+        <h1 class="purpleGlow">Bootstrap</h1>
+        <section id="containers" class="block">
+            <h2 class="underline">Containers</h2>
+            <pre>
+Fixed-width Container: &lt;div class="container"&gt;
+Fluid-width Container: &lt;div class="container-fluid"&gt;
+Responsive Container: &lt;div class="container-{breakpoint}"&gt; (sm, md, lg, xl, xxl)
+            </pre>
+        </section>
+        <section id="Typography" class="block">
+            <h2 class="underline">Typography</h2>
+            <pre>
+Headings: &lt;h1 class="display-6">Hello World&lt;/h1&gt; (1-6)
+Faded-text-heading: &lt;h1 class="text-body-secondary"&gt;
+            </pre>
+        </section>
+        <section id="highlighted-text" class="block">
+            <h2 class="underline">Highlighted Text</h2>
+            <pre>
+Lead Paragraph: &lt;p class="lead"&gt;
+Highlighted Text: &lt;mark&gt;
+Crossed out Text: &lt;del&gt;
+Underlined Text: &lt;u&gt;
+            </pre>
+            </section>
+        <section id="alignment" class="block">
+            <h2 class="underline">Alignment</h2>
+            <pre>
+Text Alignment left: &lt;p class="text-start"&gt;
+Text Alignment center: &lt;p class="text-center"&gt;
+Text Alignment right: &lt;p class="text-end"&gt;
+            </pre>
+        </section>
+        <section id="transformation" class="block">
+            <h2 class="underline">Transformation</h2>
+            <pre>
+Text Transformation lowercase: &lt;p class="text-lowercase"&gt;
+Text Transformation uppercase: &lt;p class="text-uppercase"&gt;
+Text Transformation capitalize: &lt;p class="text-capitalize"&gt;
+            </pre>
+        </section>
+        <section id="floating" class="block">
+            <h2 class="underline">Floating</h2>
+            <pre>
+Float to Left: &lt;div class="float-start"&gt;
+Float to Right: &lt;div class="float-end"&gt;
+No Float: &lt;div class="float-none"&gt;
+
+            </pre>
+        </section>
+        <section id="blockquotes" class="block">
+            <h2 class="underline">Blockquotes</h2>
+            <pre>
+Regular Blockquote: &lt;blockquote class="blockquote"&gt;
+Blockquote Footer: &lt;figcaption class="blockquote-footer"&gt;
+            </pre>
+        </section>
+        <section id="lists" class="block">
+            <h2 class="underline">Lists</h2>
+            <pre>
+Unstyled List: &lt;ul class="list-unstyled"&gt;
+Nested Lists (Listen die weiter drinnen sind) werden nicht beeinflusst.
+Inline List: &lt;ul class="list-inline"&gt;
+Item: &lt;li class="list-inline-item"&gt;This is a list item.&lt;/li&gt; (muss man machen, dass inline list funktioniert)
+List:
+&lt;ul class="list-group"&gt;
+&lt;div class="list-group"&gt;
+Items:
+Normal Items: &lt;li class="list-group-item"&gt;
+Active Items: &lt;li class="list-group-item active"&gt;
+Disabled Items: &lt;li class="list-group-item disabled"&gt;
+
+Button in div list: &lt;button type="button" class="list-group-item list-group-item-action (word)"&gt;
+word: active or disabled or just write nothing, leave it blank
+a in div list: &lt;a href="#" class="list-group-item list-group-item-action"&gt;
+
+Works with &lt;button&gt; and &lt;a&gt; as well. They also have the class .list-group-item-action where you get a hover effect.
+
+
+Farbe:
+&lt;a class="list-group-item list-group-item-{color}" href="#"&gt;
+color: primary, secondary, success, danger, warning, info, light, dark
+
+            </pre>
+        </section>
+        <section id="cards" class="block">
+            <h2 class="underline">Cards</h2>
+            <pre>
+Card: &lt;div class="card"&gt;
+Card Image: &lt;img alt="Card image cap" class="card-img-top" src="img.jpeg"&gt;
+Card Body: &lt;div class="card-body"&gt;
+Card Title: &lt;h4 class="card-title"&gt;
+Card Text: &lt;p class="card-text"&gt;
+
+&lt;div class="card" style="width: 20rem;"&gt;
+	&lt;img class="card-img-top" src="..." alt="Card image cap"&gt;
+	&lt;div class="card-body"&gt;
+		&lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+&lt;p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+		&lt;/p&gt;
+		&lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+            </pre>
+        </section>
+        <section id="buttons" class="block">
+            <h2 class="underline">Buttons</h2>
+            <pre>
+Standard Button:
+“btn“ und “btn-default“ unterscheiden sich im Aussehen (“btn-default“ hat eine border und “btn“ hat eine transition beim draufdrücken)
+
+&lt;button class="btn"&gt;
+&lt;button class="btn-default"&gt;
+Anchors as Buttons
+&lt;a class="btn" href="#" role="button"&gt;
+Button for form (submit):
+&lt;input type="submit" class="btn" value="Submit"&gt;
+&lt;input type="submit" class="btn-default" value="Submit"&gt;
+Buttons Farben
+&lt;button class=" btn btn-{color}" type="button"&gt;
+color: default, primary secondary, success, info, warning, danger, link, light, dark
+Button Größen
+Big Button: &lt;button class="btn btn-lg"&gt;
+Small Button: &lt;button class="btn btn-sm"&gt;
+
+Deaktivierung:
+
+Disabled Button: &lt;button class="btn btn-xs" disabled&gt;
+
+            </pre>
+        </section>
+        <section id="tables" class="block">
+            <h2 class="underline">Tables</h2>
+            <pre>
+Table: &lt;table class="table"&gt;
+Styles:
+Table striped: &lt;table class="table table-striped"&gt;
+Table bordered: &lt;table class="table table-bordered"&gt;
+Table hover: &lt;table class="table table-hover"&gt;
+Table striped columns: &lt;table class="table table-striped-columns"&gt;
+
+            </pre>
+        </section>
+        <section id="Grids" class="block">
+            <h2 class="underline">Grids</h2>
+            <pre>
+Grid: &lt;div class="container">
+Rows:
+Row: &lt;div class="row"&gt;
+Justify Row content(funktioniert für left oder right ebenfalls):
+&lt;div class="row justify-content-{breakpoint}-center"> (Der Inhalt der Row wird zentriert sobald der gewünschte breakpoint erreicht wird)
+Cols:
+Col immer gleich breit: &lt;div class="col-{wert}"&gt;
+Col der ab einem gewissen breakpoint breit wird: &lt;div class="col col-{breakpoint}-{wert}"&gt;
+Colsamount in einer line > 12 = überflüssigen cols gehen in nächste Zeile
+4 classes: xs, sm, md, lg
+
+&lt;div class="container">
+	&lt;div class="row"&gt;
+		&lt;div class="col-*-*"&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="col-*-*"&gt;
+		&lt;/div&gt;
+		&lt;div class="col-*-*"&gt;
+		&lt;/div&gt;
+		&lt;div class="col-*-*"&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="row"&gt; ...
+	&lt;/div&gt;
+&lt;/div&gt;
+
+            </pre>
+        </section>
+        <section id="images-figures" class="block">
+            <h2 class="underline">Images and Figures</h2>
+            <pre>
+Fluid Image: &lt;img alt="Responsive image" class="img-fluid" src="img.jpeg"&gt;
+Rounded Corners:
+&lt;img alt="pic with rounded corners" class="rounded-(wert)(optional)" src="img.jpeg"&gt;
+Rounded Cirlce:
+&lt;img alt="pic with rounded corners" class="rounded-circle" src="img.jpeg"&gt;
+
+            </pre>
+        </section>
+        <section id="carousel" class="block">
+            <h2 class="underline">Carousel</h2>
+            <pre>
+Carousel: &lt;div class="carousel slide" id="carouselExampleCaptions"&gt;
+Carousel fade:
+&lt;div class="carousel carousel-fade" id="carouselExampleCaptions"&gt;
+Carousel autoplay:
+&lt;div class="carousel slide" id="carouselExampleCaptions" data-bs-ride=”true”&gt;
+Carousel autoplay after user interaction:
+&lt;div class="carousel slide" id="carouselExampleCaptions" data-bs-ride=”carousel”&gt;
+
+Inner carousel (mandatory):
+&lt;div class="carousel-inner"&gt;
+Inner item:
+&lt;div class="carousel-item active"&gt; (apply active to only 1 for it to work)
+Button to navigate:
+&lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"&gt;
+    &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+    &lt;span class="visually-hidden"&gt;Previous&lt;/span&gt;
+&lt;/button>
+&lt;button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next"&gt;
+    &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&gt;/span&gt;
+    &lt;span class="visually-hidden"&gt;Next&gt;/span&gt;
+&lt;/button&gt;
+
+Indicators (show where you at in the slide, should be added before inner carousel):
+&lt;div class="carousel-indicators"&gt;
+    &lt;button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"&gt;&lt;/button&gt;
+    &lt;button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"&gt;&lt;/button&gt;
+    &lt;button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"&gt;&lt;/button&gt;
+&lt;/div&gt;
+            </pre>
+        </section>
+        <section id="alerts" class="block">
+            <h2 class="underline">Alerts</h2>
+            <pre>
+Normal alert: &lt;div class="alert" role="alert"&gt;
+Alert Link with anchor tag: &lt;a class="alert-link" href="#"&gt;
+Alert Heading: &lt;h4 class="alert-heading"&gt;
+Dismissible Alert:
+&lt;div class="alert alert-dismissible fade show" role="alert"&gt;
+Close button (X):
+&lt;button aria-label="Close" class="btn-close" data-bs-dismiss="alert" type="button"&gt;
+
+Farben:
+&lt;div class="alert alert-{color}" role="alert"&gt;
+color: primary,  success, info, warning, danger, light, dark, secondary
+
+            </pre>
+        </section>
+        <section id="colors" class="block">
+            <h2 class="underline">Colors</h2>
+            <pre>
+Textfarben: &lt;p class="text-(color)"&gt;
+Hintergrundfarben: &lt;p class="text-bg-(color)"&gt;
+color: primary,  success,  info, warning, danger, light, dark, secondary
+Wenn man “text” bei “text-bg-(color)“ dazuschreibt, verändert sich die Farbe, je nach Hintergrundfarbe, damit der Text noch sichtbar ist (bei dark, wird der Text weiß)
+            </pre>
+        </section>
+        <section id="dropdowns" class="block">
+            <h2 class="underline">Dropdowns</h2>
+            <pre>
+Normal Dropdown:
+Dropdownclass: &lt;div class="dropdown"&gt;
+Centered Dropdowns: &lt;div class="dropdown dropdown-center"&gt;
+Dropdown button:
+&lt;button aria-expanded="false" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" type="button"&gt;
+Split Dropdown:
+Dropdown: &lt;div class="btn-group"&gt;
+Menu above: &lt;div class="btn-group dropup"&gt;
+Menu centered: &lt;div class="btn-group dropup-center"&gt;
+Menu end: &lt;div class="btn-group dropend"&gt;
+Menu start: &lt;div class="btn-group dropstart"&gt;
+Dropdown Menu:
+Dropdown Menu: &lt;ul class="dropdown-menu"&gt;
+Dropdown Menu dark: &lt;ul class="dropdown-menu" data-bs-theme="dark"&gt;
+Align Menu left:
+&lt;ul class="dropdown-menu dropdown-menu-{breakpoint}-start"&gt;
+Align Menu right: &lt;ul class="dropdown-menu dropdown-menu-{breakpoint}-end"&gt;
+Dropdown Items:
+Dropdown Item: &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;
+Dropdown Item active: &lt;li&gt;&lt;a class="dropdown-item active" href="#"&gt;
+Dropdown Item disabled: &lt;li&gt;&lt;a class="dropdown-item disabled" href="#"&gt;
+Dropdown Item Text: &lt;li&gt;&lt;span class="dropdown-item-text"&gt;
+Dropdown Divider: &lt;li&gt;&lt;hr class="dropdown-divider"&gt;
+
+            </pre>
+        </section>
+        <section id="badges" class="block">
+            <h2 class="underline">Badges</h2>
+            <pre>
+Badge: &lt;span class="badge bg-secondary"&gt;
+Rounded Badge: &lt;span class="badge bg-secondary rounded-pill"&gt;
+Badge in corner with text: &lt;span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"&gt;
+Round Badge in corner: &lt;span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"&gt;
+
+Farben:
+&lt;span class="badge text-bg-(color)">&lt;/span&gt;
+color: primary, secondary, success, danger, warning, info, light, dark
+
+            </pre>
+        </section>
+        <section id="Pagination" class="block">
+            <h2 class="underline">Pagination</h2>
+            <pre>
+Pagination: &lt;nav aria-label="Page navigation example"&gt;
+List: &lt;ul class="pagination"&gt;
+Page Item: &lt;li class="page-item">&lt;a class="page-link" href="#"&gt;
+Page Item active:
+&lt;li class="page-item active">&lt;a class="page-link" href="#"&gt;
+Page Item disabled:
+&lt;li class="page-item disabled">&lt;a class="page-link" href="#"&gt;
+
+Previous and Next:
+&lt;li class="page-item"&gt;
+    &lt;a class="page-link" href="#" aria-label="Previous"&gt;
+        &lt;span aria-hidden="true">&laquo;&lt;/span&gt;
+    &lt;/a&gt;
+&lt;/li&gt;
+
+&lt;li class="page-item"&gt;
+    &lt;a class="page-link" href="#" aria-label="Next"&gt;
+        &lt;span aria-hidden="true">&laquo;&lt;/span&gt;
+    &lt;/a&gt;
+&lt;/li&gt;
+
+&lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+&lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Previous&lt;/a&gt&lt;/li&gt;
+            </pre>
+        </section>
+        <section id="forms" class="block">
+            <h2 class="underline">Forms</h2>
+            <pre>
+Input:
+Form Name: &lt;label class="form-label" for="exampleFormControlInput1"&gt;
+Input Feld:
+&lt;input class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" type="email"&gt;
+Passwort:
+Password Input Feld:
+&lt;input aria-describedby="passwordHelpBlock" class="form-control" id="inputPassword5" type="password"&gt;
+Form Text: div class="form-text" id="passwordHelpBlock"&gt;
+Dateien Hochladen:
+Datei Input Feld:
+&lt;input class="form-control" id="formFile" type="file"&gt;
+Mehrere Dateien Input Feld:
+&lt;input class="form-control" id="formFileMultiple" multiple type="file"&gt;
+Datalist (Options):
+Input Datalist:
+&lt;input class="form-control" id="exampleDataList" list="datalistOptions" placeholder="Type to search..."&gt;
+Datalist Options: &lt;datalist id="datalistOptions"&gt;
+Options: &lt;option value="Mexico"&gt;
+Default Select Menu:
+Menu: &lt;select aria-label="Default select example" class="form-select"&gt;
+Option ausgewählt: &lt;option selected>Open this select menu&lt;/option&gt;
+Option unausgewählt: &lt;option value="1"&gt;One&lt;/option&gt;
+
+Sizing:
+&lt;select class="form-select form-select-lg mb-3" aria-label="Large select example"&gt;
+&lt;select class="form-select form-select-lg mb-3" aria-label="Small select example"&gt;
+
+&lt;select class="form-select" size="3" aria-label="Size 3 select example"&gt;
+
+
+Disabled:
+&lt;select class="form-select" aria-label="Disabled select example" disabled&gt;
+
+
+Multiple Select Menu:
+Menu:
+&lt;select aria-label="Multiple select example" class="form-select" multiple&gt;
+Der Rest gleich wie beim Default Select Menu.
+Checkbox:
+Form Check: &lt;div class="form-check"&gt;
+Checkbox:
+&lt;input class="form-check-input" id="flexCheckDefault" type="checkbox" value=""&gt;
+Checkbox checked:
+&lt;input class="form-check-input" id="flexCheckDefault" type="checkbox" value="" checked&gt;
+Checkbox disabled:
+&lt;input class="form-check-input" disabled id="flexCheckDefault" type="checkbox" value=""&gt;
+Label: &lt;label class="form-check-label" for="flexCheckDefault"&gt;
+Intermediate:
+In JS with pseudoclass :intermediate, no html attribute
+Inline:
+Add .form-check-inline to every .form-check.
+Reverse:
+Add .form-check-reverse to every .form-check
+
+Radius:
+Form Check: &lt;div class="form-check"&gt;
+Radius:
+&lt;input class="form-check-input" id=" flexRadioDefault1" name="flexRadioDefault" type="radio"&gt;
+Radius checked:
+&lt;input checked class="form-check-input" id=" flexRadioDefault1" name="flexRadioDefault" type="radio"&gt;
+Radius disabled:
+&lt;input class="form-check-input" disabled id=" flexRadioDefault1" name="flexRadioDefault" type="radio"&gt;
+Label: &lt;label class="form-check-label" for="flexRadioDefault1"&gt;
+Switch:
+Form Check: &lt;div class="form-check form-switch"&gt;
+Switch: &lt;input class="form-check-input" id="flexSwitchCheckDefault" role="switch" type="checkbox"&gt;
+Switch checked:
+&lt;input class="form-check-input" id="flexSwitchCheckDefault" role="switch" type="checkbox" checked&gt;
+Switch disabled:
+&lt;input class="form-check-input" id="flexSwitchCheckDefault" role="switch" type="checkbox" disabled&gt;
+Label: &lt;label class="form-check-label" for="flexSwitchCheckDefault"&gt;
+Range:
+Label: &lt;label class="form-label" for="customRange1"&gt;
+Range: &lt;input class="form-range" id="customRange1" type="range"&gt;
+Range with steps:
+&lt;input class="form-range" id="customRange1" type="range" min="1" max="10" step="0.5"&gt;
+Range disabled:
+&lt;input class="form-range" id="customRange1" type="range" disabled&gt;
+Input Group:
+Input Group: &lt;div class="input-group"&gt;
+Input Group Text: &lt;span class="input-group-text"&gt;
+Button: &lt;button class="btn btn-outline-secondary" id="button-addon1" type="button"&gt;
+Input: &lt;input aria-label="First name" class="form-control" type="text"&gt;
+Form example:
+&lt;form class="row g-3"&gt;
+    &lt;div class="col-md-4"&gt;
+        &lt;label class="form-label" for="validationDefault01">First name&lt;/label&gt;
+        &lt;input class="form-control" id="validationDefault01" required type="text" value="Mark"&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-4"&gt;
+        &lt;label class="form-label" for="validationDefault02"&gt;Last name&lt;/label&gt;
+        &lt;input class="form-control" id="validationDefault02" required type="text" value="Otto"&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-4"&gt;
+        &lt;label class="form-label" for="validationDefaultUsername"&gt;Username&lt;/label&gt;
+        &lt;div class="input-group"&gt;
+            &lt;span class="input-group-text" id="inputGroupPrepend2"&gt;@&lt;/span&gt;
+            &lt;input aria-describedby="inputGroupPrepend2" class="form-control" id="validationDefaultUsername" required type="text"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-6">
+        &lt;label class="form-label" for="validationDefault03"&gt;City&lt;/label&gt;
+        &lt;input class="form-control" id="validationDefault03" required type="text"&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-3"&gt;
+        &lt;label class="form-label" for="validationDefault04"&gt;State&lt;/label&gt;
+        &lt;select class="form-select" id="validationDefault04" required&gt;
+            option disabled selected value=""&gt;Choose...&lt;/option&gt;
+            &lt;option&gt;...&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-3"&gt;
+        &lt;label class="form-label" for="validationDefault05"&gt;Zip&lt;/label&gt;
+        &lt;input class="form-control" id="validationDefault05" required type="text"&gt;
+    &lt;/div&gt;
+    &lt;div class="col-12"&gt;
+        &lt;div class="form-check"&gt;
+            &lt;input class="form-check-input" id="invalidCheck2" required type="checkbox" value=""&gt;
+            &lt;label class="form-check-label" for="invalidCheck2"&gt;
+                Agree to terms and conditions
+            &lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-12"&gt;
+        &lt;button class="btn btn-primary" type="submit"&gt;Submit form&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+</pre>
+        </section>
+    </article>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>

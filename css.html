@@ -3,17 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="./images/CSS.png">
     <title>CSS</title>
 </head>
 <body class="blueBG animateBG noBorder">
 <nav class="navbar blur bottom">
-    <a href="index.html">Home</a>
-    <a href="html.html">HTML</a>
-    <a href="css.html">CSS</a>
-    <a href="javascript.html">JS</a>
-    <a href="WWW.html">WWW</a>
+    <a class="navbar-brand" href="index.html">
+        <img src="./images/faviconHome.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        HOME
+    </a>
+    <a class="navbar-brand" href="html.html">
+        <img src="./images/HTML.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        HTML
+    </a>
+    <a class="navbar-brand" href="css.html">
+        <img src="./images/CSS.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        CSS
+    </a>
+    <a class="navbar-brand" href="javascript.html">
+        <img src="./images/JS.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        JS
+    </a>
+    <a class="navbar-brand" href="bootstrap.html">
+        <img src="./images/BOOTSTRAP.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Bootstrap
+    </a>
+    <a class="navbar-brand" href="WWW.html">
+        <img src="./images/WWW.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        WWW
+    </a>
 </nav>
 
 <nav class="navbar blur">
@@ -25,11 +45,11 @@
     <a href="#links">Links</a>
     <a href="#combinators">Combinators</a>
     <a href="#pseudo_classes">Pseudo Classes</a>
+    <a href="#transition">Transitions and more</a>
 </nav>
 <div class="outerLine">
-<h1 class="blueGlow">CSS</h1>
     <article>
-        <h2>Lastly updated on 09.01.2024</h2>
+        <h1 class="blueGlow">CSS</h1>
         <section id="syntax" class="block">
             <h2 class="underline">Syntax</h2>
             <img src="./images/SyntaxCSS.png" alt="picture of the syntax in css">
@@ -235,7 +255,93 @@
             <h3>CSS - The :first-child Pseudo-class</h3>
             <p>The <em>:first-child</em> pseudo-class matches a specified element that is the first child of another element.</p>
         </section>
+        <section class="block" id="transition">
+            <h2 class="underline">Transition</h2>
+            <p>
+                The transition property value is specified as one of the following:
+                <br>
+            </p>
+
+            <ul>
+                <li>The special value none, which specifies that no transitions will occur on this element. This is the default value.</li>
+                <li>One or more single-property transitions, separated by commas.</li>
+                </ul>
+            <p>
+                <br>
+                Each single-property transition describes the transition that should be applied to a single property or all properties.
+                <br>
+                When you use transition it goes from a property like <em>padding-top: 1rem</em> to the rule where the transition property is in to <em>padding-top: 4rem;</em>
+            </p>
+        </section>
+        <section id="gradients" class="block">
+            <h2 class="underline">Gradients</h2>
+            <p>
+                There are many different gradients like <em>linear-gradient, radial-gradient, repeating-linear-gradient, repeating-radial-gradient and conic-gradient</em>.
+                <br>
+                You can give multiple colors as values and the gradient makes it goes from one color to the other. (transitions) (linear = linear, radial = circle, repeating = repeats itself multiple times, conic = circle but has strict color transition in linear dimension)
+            </p>
+        </section>
+        <section id="positions" class="block">
+            <h2 class="underline">Positions</h2>
+            <p>
+                The property position can have a lot of different values. Value: sticky, fixed, absolute, relative, static.
+                <br>
+                <br>Static is the default value.
+                <br>
+                <br>Relative:
+                <br>
+                The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements; thus, the space given for the element in the page layout is the same as if position were static.
+                <br>
+                <br>Absolute:
+                <br>
+                The element is removed from the normal document flow, and no space is created for the element in the page layout. The element is positioned relative to its closest positioned ancestor (if any) or to the initial containing block. Its final position is determined by the values of top, right, bottom, and left.
+                <br>
+                <br>Fixed:
+                <br>
+                Especially good for navbars. The element is removed from the normal document flow, and no space is created for the element in the page layout. The element is positioned relative to its initial containing block, which is the viewport in the case of visual media. Its final position is determined by the values of top, right, bottom, and left.
+                <br>
+                <br>Sticky:
+                <br>
+                The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements.
+                When you scroll it sticks to the page until you exit the element/parent element which is made sticky.
+            </p>
+        </section>
+        <section class="block" id="animation">
+            <h2 class="underline">Animation</h2>
+            <p>
+                The animation property is specified as one or more single animations, separated by commas.
+                An animation has keyframes. These keyframes are special moments. For example a keyframe can be at 0% and another one can be at 50%. Then the animation goes from the values which are declared in 0% to 50%. If you add a keyframe of 25% to the animation it goes from 0% to 25% to 50%.
+                You can change the position of something in the animation or change its values. Example of an animation.
+            </p>
+            <pre>
+    <span class="textOrange">@keyframes</span> myAnimation
+    {
+        <span class="textOrange">0%</span> {
+            width: 100px;
+            height: 100px;
+        }
+        <span class="textOrange">50%</span> {
+            width: 200px;
+            height: 200px;
+        }
+        <span class="textOrange">100%</span> {
+            width: 1000px;
+            height: 2000px;
+        }
+    }
+
+    <span class="textOrange">img</span> {
+        animation: 1s linear infinite myAnimation;
+    }
+                </pre>
+
+            <p>
+                In the example above an image starts at 100px * 100px (0%) then it goes to 50% where the image is already at 200px * 200px. When the animation reaches 100% it has the size 1000px*2000px. This happens over the time of 5 seconds because we said it in the css-rule of image. It is also repeated infinitely. The image starts at 0% when after the animation reaches 100%.
+            </p>
+            <p>An animation can have a lot of values which can be assigned with multiple propertys, but with the animation property everything can be assigned at once.</p>
+        </section>
     </article>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

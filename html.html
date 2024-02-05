@@ -3,17 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="./images/HTML.png">
     <title>HTML</title>
 </head>
 <body class="redBG animateBG noBorder">
 <nav class="navbar blur bottom">
-    <a href="index.html">Home</a>
-    <a href="html.html">HTML</a>
-    <a href="css.html">CSS</a>
-    <a href="javascript.html">JS</a>
-    <a href="WWW.html">WWW</a>
+    <a class="navbar-brand" href="index.html">
+        <img src="./images/faviconHome.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        HOME
+    </a>
+    <a class="navbar-brand" href="html.html">
+        <img src="./images/HTML.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        HTML
+    </a>
+    <a class="navbar-brand" href="css.html">
+        <img src="./images/CSS.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        CSS
+    </a>
+    <a class="navbar-brand" href="javascript.html">
+        <img src="./images/JS.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        JS
+    </a>
+    <a class="navbar-brand" href="bootstrap.html">
+        <img src="./images/BOOTSTRAP.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Bootstrap
+    </a>
+    <a class="navbar-brand" href="WWW.html">
+        <img src="./images/WWW.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        WWW
+    </a>
 </nav>
 
     <nav class="navbar blur">
@@ -29,11 +49,10 @@
         <a href="#Lists">Lists</a>
     </nav>
 <div class="outerLine">
-<h1 class="redGlow">HTML</h1>
     <article>
-        <h2>Lastly updated on 09.01.2024</h2>
-            <section id="basics" class="block">
-                <h2 class="underline">Basics</h2>
+        <h1 class="redGlow">HTML</h1>
+        <section id="basics" class="block">
+            <h2 class="underline">Basics</h2>
             <p>
                 An HTML document must start with a &lt;DOCTYPE html&gt; declaration and normally begins and ends with an &lt;html&gt;
                 The most commonly used tags are the &lt;head&gt; and &lt;body&gt; tag.
@@ -194,41 +213,8 @@
                     <span>Block elements can be assigned a margin and padding in every direction, while an inline element can only get a right and left margin or padding. You can make an inline element a block element with the css property <em>display:block</em></span>
                 </section>
             </section>
-            <section class="block">
-                <h2 class="underline">Animation</h2>
-                <p>
-                    The animation property is specified as one or more single animations, separated by commas.
-                    An animation has keyframes. These keyframes are special moments. For example a keyframe can be at 0% and another one can be at 50%. Then the animation goes from the values which are declared in 0% to 50%. If you add a keyframe of 25% to the animation it goes from 0% to 25% to 50%.
-                    You can change the position of something in the animation or change its values. Example of an animation.
-                </p>
-                <pre>
-                    @keyframes myAnimation
-                    {
-                        0% {
-                            width: 100px;
-                            height: 100px;
-                        }
-                        50% {
-                            width: 200px;
-                            height: 200px;
-                        }
-                        100% {
-                            width: 1000px;
-                            height: 2000px;
-                        }
-                    }
-
-                    img {
-                        animation: 1s linear infinite myAnimation;
-                    }
-                </pre>
-
-                <p>
-                    In the example above an image starts at 100px * 100px (0%) then it goes to 50% where the image is already at 200px * 200px. When the animation reaches 100% it has the size 1000px*2000px. This happens over the time of 5 seconds because we said it in the css-rule of image. It is also repeated infinitely. The image starts at 0% when after the animation reaches 100%.
-                </p>
-                <p>An animation can have a lot values which can be assigned with multiple propertys, but with the animation property everything can be assigned at once.</p>
-            </section>
     </article>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

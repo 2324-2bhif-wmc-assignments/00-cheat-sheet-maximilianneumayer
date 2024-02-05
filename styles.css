@@ -1,4 +1,4 @@
-body {
+body, h1 {
     color: whitesmoke;
     font-family: Georgia, Helvetica, sans-serif;
 }
@@ -13,16 +13,16 @@ body {
 
 .block {
     border-radius: 1rem;
-    border: 0.1rem solid black;
-    box-shadow: 0 0 10px black, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 35px black;
+    border: 0.1rem solid #212121;
+    box-shadow: 0 0 10px #212121, 0 0 20px #212121, 0 0 25px #212121, 0 0 30px #212121, 0 0 35px #212121;
     margin: 3rem;
     padding: 0 1rem 0 1rem;
-    background: black;
+    background: #212121;
 }
 
 .card {
     padding: 1rem;
-    animation: 50s moveBG ease infinite;
+    animation: 50s moveBG linear infinite;
 }
 
 .homeDisplay {
@@ -57,7 +57,7 @@ body {
 }
 
 .animateBG {
-    animation: 40s moveBG ease infinite;
+    animation: 40s moveBG linear infinite;
 }
 
 .card:hover {
@@ -97,25 +97,25 @@ body {
 .container .redBG:hover {
     box-shadow: 10px 10px 20px 10px red;
     transition: 1s;
-    animation: 30s moveBG ease infinite;
+    animation: 30s moveBG linear infinite;
 }
 
 .container .blueBG:hover {
     box-shadow: 10px 10px 20px 10px cornflowerblue;
     transition: 1s;
-    animation: 30s moveBG ease infinite;
+    animation: 30s moveBG linear infinite;
 }
 
 .container .yellowBG:hover {
     box-shadow: 10px 10px 20px 10px yellow;
     transition: 1s;
-    animation: 30s moveBG ease infinite;
+    animation: 30s moveBG linear infinite;
 }
 
 .container .greyBG:hover {
     box-shadow: 10px 10px 20px 10px dimgrey;
     transition: 1s;
-    animation: 30s moveBG ease infinite;
+    animation: 30s moveBG linear infinite;
 }
 
 a {
@@ -134,6 +134,10 @@ a {
 
 .yellowGlow {
     text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow, 0 0 50px yellow, 0 0 60px yellow, 0 0 70px yellow;
+}
+
+.purpleGlow {
+    text-shadow: 0 0 10px purple, 0 0 20px purple, 0 0 30px purple, 0 0 40px purple, 0 0 50px purple, 0 0 60px purple, 0 0 70px purple;
 }
 
 .greyGlow {
@@ -193,7 +197,7 @@ a {
             200px, blue 250px, cornflowerblue 300px, blue 350px, #507993 370px);
 
     background-size: 300% 300%;
-    animation: 50s moveBG ease infinite;
+    animation: 50s moveBG linear infinite;
 }
 
 .yellowBG {
@@ -221,7 +225,35 @@ a {
             200px, #daaa2e 250px, #72611d 300px, #d5b825 350px, #c9d51f 370px);
 
     background-size: 300% 300%;
-    animation: 50s moveBG ease infinite;
+    animation: 50s moveBG linear infinite;
+}
+
+.purpleBG {
+    background: repeating-linear-gradient(
+            190deg,
+            rgba(114, 70, 255, 0.58) 40px,
+            rgba(97, 13, 192, 0.5) 80px,
+            rgba(77, 2, 182, 0.57) 120px,
+            rgba(118, 58, 220, 0.5) 160px,
+            rgba(134, 38, 255, 0.5) 200px,
+            rgba(118, 51, 238, 0.47) 240px,
+            rgba(116, 25, 255, 0.5) 280px,
+            rgba(155, 65, 255, 0.5) 300px
+    ), repeating-linear-gradient(
+            -190deg,
+            rgba(143, 23, 255, 0.5) 30px,
+            rgba(132, 34, 255, 0.5) 60px,
+            rgba(79, 18, 171, 0.5) 90px,
+            rgba(125, 71, 253, 0.5) 120px,
+            rgba(131, 36, 232, 0.5) 150px,
+            rgba(92, 28, 201, 0.5) 180px,
+            rgba(124, 39, 213, 0.5) 210px,
+            rgba(132, 38, 236, 0.5) 230px
+    ), repeating-linear-gradient(23deg, #6f1aef 50px, #8131ff 100px, #5602ab 150px, #6d24ff
+            200px, #822eff 250px, #792dec 300px, #9c5cff 350px, #7f2bff 370px);
+
+    background-size: 300% 300%;
+    animation: 50s moveBG linear infinite;
 }
 
 .greyBG {
@@ -249,7 +281,7 @@ a {
             200px, #2a2a2a 250px, #2a2a2a 300px, #212121 350px, #1c1c1c 370px);
 
     background-size: 300% 300%;
-    animation: 50s moveBG ease infinite;
+    animation: 50s moveBG linear infinite;
 }
 
 @keyframes moveBG {
@@ -287,18 +319,21 @@ h1 {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .bottom {
     top: 95%;
     transition: 1s;
-    padding: 3rem 0;
+    padding-top: 3rem;
+    opacity: 0;
 }
 
 .bottom:hover {
-    top: 85%;
+    top: 92%;
     transition: 1s;
+    opacity: 100%;
+    padding-top: 0;
 }
 
 .navbar a {
@@ -325,6 +360,10 @@ h1 {
     color: red;
 }
 
+.purpleBG .navbar a:hover {
+    color: rebeccapurple;
+}
+
 .greyBG .navbar a:hover {
     color: lightgrey;
 }
@@ -338,7 +377,7 @@ div.outerLine {
 }
 
 .underline {
-    border-bottom: 0.08rem solid white
+    border-bottom: 0.08rem solid white;
 }
 
 .normalTable, .normalTable td, .normalTable tr {
@@ -351,4 +390,33 @@ body:last-child {
 
 img {
     border-radius: 2rem;
+}
+
+.textOrange {
+    color: orange;
+}
+
+pre {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    background-color: #212121;
+    border-radius: 1rem;
+    color: white;
+}
+
+body.noBorder {
+    background-size: 200% 200%;
+}
+
+.blueBG .underline {
+    color: cornflowerblue;
+}
+
+.redBG .underline {
+    color: #930000;
+}
+
+.greyBG .underline {
+    color: #d3d3d3;
 }
