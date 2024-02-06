@@ -141,10 +141,10 @@ Unstyled List: &lt;ul class="list-unstyled"&gt;
 Nested Lists (Listen die weiter drinnen sind) werden nicht beeinflusst.
 Inline List: &lt;ul class="list-inline"&gt;
 Item: &lt;li class="list-inline-item"&gt;This is a list item.&lt;/li&gt; (muss man machen, dass inline list funktioniert)
-List:
+<span class="textOrange">List:</span>
 &lt;ul class="list-group"&gt;
 &lt;div class="list-group"&gt;
-Items:
+<span class="textOrange">Items:</span>
 Normal Items: &lt;li class="list-group-item"&gt;
 Active Items: &lt;li class="list-group-item active"&gt;
 Disabled Items: &lt;li class="list-group-item disabled"&gt;
@@ -155,8 +155,7 @@ a in div list: &lt;a href="#" class="list-group-item list-group-item-action"&gt;
 
 Works with &lt;button&gt; and &lt;a&gt; as well. They also have the class .list-group-item-action where you get a hover effect.
 
-
-Farbe:
+<span class="textOrange">Farbe:</span>
 &lt;a class="list-group-item list-group-item-{color}" href="#"&gt;
 color: primary, secondary, success, danger, warning, info, light, dark
             </pre>
@@ -184,25 +183,24 @@ Card Text: &lt;p class="card-text"&gt;
         <section id="buttons" class="block">
             <h2 class="underline">Buttons</h2>
             <pre>
-Standard Button:
+<span class="textOrange">Standard Button</span>
 “btn“ und “btn-default“ unterscheiden sich im Aussehen (“btn-default“ hat eine border und “btn“ hat eine transition beim draufdrücken)
 
 &lt;button class="btn"&gt;
 &lt;button class="btn-default"&gt;
-Anchors as Buttons
+<span class="textOrange">Anchors as Buttons</span>
 &lt;a class="btn" href="#" role="button"&gt;
-Button for form (submit):
+<span class="textOrange">Button for form (submit):</span>
 &lt;input type="submit" class="btn" value="Submit"&gt;
 &lt;input type="submit" class="btn-default" value="Submit"&gt;
-Buttons Farben
+<span class="textOrange">Buttons Farben</span>
 &lt;button class=" btn btn-{color}" type="button"&gt;
 color: default, primary secondary, success, info, warning, danger, link, light, dark
-Button Größen
+<span class="textOrange">Button Größen</span>
 Big Button: &lt;button class="btn btn-lg"&gt;
 Small Button: &lt;button class="btn btn-sm"&gt;
 
-Deaktivierung:
-
+<span class="textOrange">Deaktivierung:</span>
 Disabled Button: &lt;button class="btn btn-xs" disabled&gt;
             </pre>
         </section>
@@ -210,7 +208,7 @@ Disabled Button: &lt;button class="btn btn-xs" disabled&gt;
             <h2 class="underline">Tables</h2>
             <pre>
 Table: &lt;table class="table"&gt;
-Styles:
+<span class="textOrange">Styles:</span>
 Table striped: &lt;table class="table table-striped"&gt;
 Table bordered: &lt;table class="table table-bordered"&gt;
 Table hover: &lt;table class="table table-hover"&gt;
@@ -221,11 +219,11 @@ Table striped columns: &lt;table class="table table-striped-columns"&gt;
             <h2 class="underline">Grids</h2>
             <pre>
 Grid: &lt;div class="container">
-Rows:
+<span class="textOrange">Rows:</span>
 Row: &lt;div class="row"&gt;
 Justify Row content(funktioniert für left oder right ebenfalls):
 &lt;div class="row justify-content-{breakpoint}-center"> (Der Inhalt der Row wird zentriert sobald der gewünschte breakpoint erreicht wird)
-Cols:
+<span class="textOrange">Cols:</span>
 Col immer gleich breit: &lt;div class="col-{wert}"&gt;
 Col der ab einem gewissen breakpoint breit wird: &lt;div class="col col-{breakpoint}-{wert}"&gt;
 Colsamount in einer line > 12 = überflüssigen cols gehen in nächste Zeile
@@ -271,11 +269,12 @@ Carousel autoplay:
 Carousel autoplay after user interaction:
 &lt;div class="carousel slide" id="carouselExampleCaptions" data-bs-ride=”carousel”&gt;
 
-Inner carousel (mandatory):
+<span class="textOrange">Inner carousel (mandatory)</span>
 &lt;div class="carousel-inner"&gt;
 Inner item:
 &lt;div class="carousel-item active"&gt; (apply active to only 1 for it to work)
-Button to navigate:
+
+<span class="textOrange">Button to navigate:</span>
 &lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"&gt;
     &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
     &lt;span class="visually-hidden"&gt;Previous&lt;/span&gt;
@@ -285,7 +284,7 @@ Button to navigate:
     &lt;span class="visually-hidden"&gt;Next&gt;/span&gt;
 &lt;/button&gt;
 
-Indicators (show where you at in the slide, should be added before inner carousel):
+<span class="textOrange">Indicators (show where you at in the slide, should be added before inner carousel)</span>
 &lt;div class="carousel-indicators"&gt;
     &lt;button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"&gt;&lt;/button&gt;
     &lt;button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"&gt;&lt;/button&gt;
@@ -304,7 +303,7 @@ Dismissible Alert:
 Close button (X):
 &lt;button aria-label="Close" class="btn-close" data-bs-dismiss="alert" type="button"&gt;
 
-Farben:
+<span class="textOrange">Farben:</span>
 &lt;div class="alert alert-{color}" role="alert"&gt;
 color: primary,  success, info, warning, danger, light, dark, secondary
             </pre>
@@ -321,24 +320,23 @@ Wenn man “text” bei “text-bg-(color)“ dazuschreibt, verändert sich die 
         <section id="dropdowns" class="block">
             <h2 class="underline">Dropdowns</h2>
             <pre>
-Normal Dropdown:
+<span class="textOrange">Normal Dropdown</span>
 Dropdownclass: &lt;div class="dropdown"&gt;
 Centered Dropdowns: &lt;div class="dropdown dropdown-center"&gt;
 Dropdown button:
 &lt;button aria-expanded="false" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" type="button"&gt;
-Split Dropdown:
+<span class="textOrange">Split Dropdown</span>
 Dropdown: &lt;div class="btn-group"&gt;
 Menu above: &lt;div class="btn-group dropup"&gt;
 Menu centered: &lt;div class="btn-group dropup-center"&gt;
 Menu end: &lt;div class="btn-group dropend"&gt;
 Menu start: &lt;div class="btn-group dropstart"&gt;
-Dropdown Menu:
+<span class="textOrange">Dropdown Menu:</span>
 Dropdown Menu: &lt;ul class="dropdown-menu"&gt;
 Dropdown Menu dark: &lt;ul class="dropdown-menu" data-bs-theme="dark"&gt;
-Align Menu left:
-&lt;ul class="dropdown-menu dropdown-menu-{breakpoint}-start"&gt;
+Align Menu left: &lt;ul class="dropdown-menu dropdown-menu-{breakpoint}-start"&gt;
 Align Menu right: &lt;ul class="dropdown-menu dropdown-menu-{breakpoint}-end"&gt;
-Dropdown Items:
+<span class="textOrange">Dropdown Items</span>
 Dropdown Item: &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;
 Dropdown Item active: &lt;li&gt;&lt;a class="dropdown-item active" href="#"&gt;
 Dropdown Item disabled: &lt;li&gt;&lt;a class="dropdown-item disabled" href="#"&gt;
@@ -354,7 +352,7 @@ Rounded Badge: &lt;span class="badge bg-secondary rounded-pill"&gt;
 Badge in corner with text: &lt;span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"&gt;
 Round Badge in corner: &lt;span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"&gt;
 
-Farben:
+<span class="textOrange">Farben:</span>
 &lt;span class="badge text-bg-(color)">&lt;/span&gt;
 color: primary, secondary, success, danger, warning, info, light, dark
             </pre>
@@ -370,7 +368,7 @@ Page Item active:
 Page Item disabled:
 &lt;li class="page-item disabled">&lt;a class="page-link" href="#"&gt;
 
-Previous and Next:
+<span class="textOrange">Previous and Next:</span>
 &lt;li class="page-item"&gt;
     &lt;a class="page-link" href="#" aria-label="Previous"&gt;
         &lt;span aria-hidden="true">&laquo;&lt;/span&gt;
@@ -390,45 +388,49 @@ Previous and Next:
         <section id="forms" class="block">
             <h2 class="underline">Forms</h2>
             <pre>
-Input:
+<span class="textOrange">Input</span>
 Form Name: &lt;label class="form-label" for="exampleFormControlInput1"&gt;
 Input Feld:
 &lt;input class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" type="email"&gt;
-Passwort:
+
+<span class="textOrange">Password:</span>
 Password Input Feld:
 &lt;input aria-describedby="passwordHelpBlock" class="form-control" id="inputPassword5" type="password"&gt;
 Form Text: div class="form-text" id="passwordHelpBlock"&gt;
-Dateien Hochladen:
+
+<span class="textOrange">Dateien Hochladen</span>
 Datei Input Feld:
 &lt;input class="form-control" id="formFile" type="file"&gt;
 Mehrere Dateien Input Feld:
 &lt;input class="form-control" id="formFileMultiple" multiple type="file"&gt;
-Datalist (Options):
+
+<span class="textOrange">Datalist (Options)</span>
 Input Datalist:
 &lt;input class="form-control" id="exampleDataList" list="datalistOptions" placeholder="Type to search..."&gt;
 Datalist Options: &lt;datalist id="datalistOptions"&gt;
 Options: &lt;option value="Mexico"&gt;
-Default Select Menu:
+
+<span class="textOrange">Default Select Menu</span>
 Menu: &lt;select aria-label="Default select example" class="form-select"&gt;
 Option ausgewählt: &lt;option selected>Open this select menu&lt;/option&gt;
 Option unausgewählt: &lt;option value="1"&gt;One&lt;/option&gt;
 
-Sizing:
+<span class="textOrange">Sizing:</span>
 &lt;select class="form-select form-select-lg mb-3" aria-label="Large select example"&gt;
 &lt;select class="form-select form-select-lg mb-3" aria-label="Small select example"&gt;
 
 &lt;select class="form-select" size="3" aria-label="Size 3 select example"&gt;
 
 
-Disabled:
+<span class="textOrange">Disabled:</span>
 &lt;select class="form-select" aria-label="Disabled select example" disabled&gt;
 
-
-Multiple Select Menu:
+<span class="textOrange">Multiple Select Menu</span>
 Menu:
 &lt;select aria-label="Multiple select example" class="form-select" multiple&gt;
 Der Rest gleich wie beim Default Select Menu.
-Checkbox:
+
+<span class="textOrange">Checkbox:</span>
 Form Check: &lt;div class="form-check"&gt;
 Checkbox:
 &lt;input class="form-check-input" id="flexCheckDefault" type="checkbox" value=""&gt;
@@ -444,7 +446,7 @@ Add .form-check-inline to every .form-check.
 Reverse:
 Add .form-check-reverse to every .form-check
 
-Radius:
+<span class="textOrange">Radius:</span>
 Form Check: &lt;div class="form-check"&gt;
 Radius:
 &lt;input class="form-check-input" id=" flexRadioDefault1" name="flexRadioDefault" type="radio"&gt;
@@ -453,7 +455,8 @@ Radius checked:
 Radius disabled:
 &lt;input class="form-check-input" disabled id=" flexRadioDefault1" name="flexRadioDefault" type="radio"&gt;
 Label: &lt;label class="form-check-label" for="flexRadioDefault1"&gt;
-Switch:
+
+<span class="textOrange">Switch:</span>
 Form Check: &lt;div class="form-check form-switch"&gt;
 Switch: &lt;input class="form-check-input" id="flexSwitchCheckDefault" role="switch" type="checkbox"&gt;
 Switch checked:
@@ -461,18 +464,20 @@ Switch checked:
 Switch disabled:
 &lt;input class="form-check-input" id="flexSwitchCheckDefault" role="switch" type="checkbox" disabled&gt;
 Label: &lt;label class="form-check-label" for="flexSwitchCheckDefault"&gt;
-Range:
+
+<span class="textOrange">Range:</span>
 Label: &lt;label class="form-label" for="customRange1"&gt;
 Range: &lt;input class="form-range" id="customRange1" type="range"&gt;
 Range with steps:
 &lt;input class="form-range" id="customRange1" type="range" min="1" max="10" step="0.5"&gt;
 Range disabled:
 &lt;input class="form-range" id="customRange1" type="range" disabled&gt;
-Input Group:
+
+<span class="textOrange">Input Group</span>
 Input Group: &lt;div class="input-group"&gt;
 Input Group Text: &lt;span class="input-group-text"&gt;
 Button: &lt;button class="btn btn-outline-secondary" id="button-addon1" type="button"&gt;
-Input: &lt;input aria-label="First name" class="form-control" type="text"&gt;
+Input: &lt;input aria-label="First name" class="form-control" type="text"&gt; <!--
 Form example:
 &lt;form class="row g-3"&gt;
     &lt;div class="col-md-4"&gt;
@@ -516,8 +521,54 @@ Form example:
     &lt;div class="col-12"&gt;
         &lt;button class="btn btn-primary" type="submit"&gt;Submit form&lt;/button&gt;
     &lt;/div&gt;
-&lt;/form&gt;
+&lt;/form&gt;-->
 </pre>
+            <span class="textOrange">Everything combined:</span>
+            <form class="row g-3">
+                <div class="col-md-4">
+                    <label class="form-label" for="validationDefault01">First name</label>
+                    <input class="form-control" id="validationDefault01" required type="text" value="Mark">
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label" for="validationDefault02">Last name</label>
+                    <input class="form-control" id="validationDefault02" required type="text" value="Otto">
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label" for="validationDefaultUsername">Username</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                        <input aria-describedby="inputGroupPrepend2" class="form-control" id="validationDefaultUsername"
+                               required type="text">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="validationDefault03">City</label>
+                    <input class="form-control" id="validationDefault03" required type="text">
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label" for="validationDefault04">State</label>
+                    <select class="form-select" id="validationDefault04" required>
+                        <option disabled selected value="">Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label" for="validationDefault05">Zip</label>
+                    <input class="form-control" id="validationDefault05" required type="text">
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" id="invalidCheck2" required type="checkbox" value="">
+                        <label class="form-check-label" for="invalidCheck2">
+                            Agree to terms and conditions
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+            </form>
+
         </section>
     </article>
 </div>
