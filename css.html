@@ -340,6 +340,28 @@
             </p>
             <p>An animation can have a lot of values which can be assigned with multiple propertys, but with the animation property everything can be assigned at once.</p>
         </section>
+        <section id="flex" class="block">
+            <h2 class="underline">Flex</h2>
+            <p>To lay elements out as flexible boxes you have to use the display property and assign it the value flex. In flex, we always have a flex container where the flex items are stored in.
+                By the default, the flex items are aligned row wise. (See navbar) But the can also get aligned column wise. So they don't repeat over the x-axis, but over the y-axis.
+                For other details see the following image:
+                <img src="./images/css-flexbox.png" alt="flexbox" id="flexBoxPoster">
+            </p>
+        </section>
+        <section id="grid" class="block">
+            <h2 class="underline">Grid</h2>
+            <p>
+                Unlike Flexbox, the items will not immediately look any different. Declaring display: grid gives you a one column grid, so your items will continue to display one below the other as they do in normal flow. To see something that looks more grid-like, we'll need to add some columns to the grid.
+            </p>
+            <pre>
+<span class="textOrange">.container</span> {
+    <span class="textOrange">display</span>: grid;
+    <span class="textOrange">grid-template-columns</span>: 200px 200px 200px;
+}
+            </pre>
+            <p>n addition to creating grids using lengths and percentages, we can use fr. The fr unit represents one fraction of the available space in the grid container to flexibly size grid rows and columns.</p>
+            <p>You can also make gaps between everything by using the property <em>gap</em>. This just makes a gap with the size of the assigned value.</p>
+        </section>
     </article>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
