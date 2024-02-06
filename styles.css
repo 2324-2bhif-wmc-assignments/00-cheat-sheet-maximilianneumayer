@@ -192,10 +192,10 @@ a {
             rgba(26, 159, 255, 0.5) 80px,
             rgba(76, 203, 255, 0.57) 120px,
             rgba(127, 190, 255, 0.5) 160px,
-            rgba(94, 94, 255, 0.5) 200px,
+            rgba(31, 31, 255, 0.5) 200px,
             rgba(0, 110, 255, 0.47) 240px,
             rgba(128, 173, 255, 0.5) 280px,
-            rgba(70, 36, 255, 0.5) 300px
+            rgba(0, 34, 255, 0.5) 300px
     ), repeating-linear-gradient(
             -190deg,
             rgba(48, 169, 255, 0.5) 30px,
@@ -206,7 +206,7 @@ a {
             rgba(130, 178, 222, 0.5) 180px,
             rgba(118, 124, 239, 0.5) 210px,
             rgba(124, 165, 201, 0.5) 230px
-    ), repeating-linear-gradient(23deg, blue 50px, dodgerblue 100px, skyblue 150px, #4500ff
+    ), repeating-linear-gradient(23deg, blue 50px, dodgerblue 100px, skyblue 150px, #0900ff
             200px, blue 250px, cornflowerblue 300px, blue 350px, #507993 370px);
 
     background-size: 300% 300%;
@@ -401,8 +401,13 @@ body:last-child {
     padding-bottom: 3rem;
 }
 
-img {
+article img {
     border-radius: 2rem;
+}
+
+.navbar-img {
+    width: 2rem;
+    height: 2rem;
 }
 
 .textOrange {
@@ -416,6 +421,7 @@ pre {
     background-color: #212121;
     border-radius: 1rem;
     color: white;
+    margin: 0;
 }
 
 body.noBorder {

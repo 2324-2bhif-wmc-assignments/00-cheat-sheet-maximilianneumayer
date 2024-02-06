@@ -10,27 +10,27 @@
 <body class="purpleBG noBorder animateBG">
 <nav class="navbar blur bottom">
     <a class="navbar-brand" href="index.html">
-        <img src="./images/faviconHome.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="./images/faviconHome.png" class="d-inline-block align-top navbar-img" alt="">
         HOME
     </a>
     <a class="navbar-brand" href="html.html">
-        <img src="./images/HTML.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="./images/HTML.png" class="d-inline-block align-top navbar-img" alt="">
         HTML
     </a>
     <a class="navbar-brand" href="css.html">
-        <img src="./images/CSS.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="./images/CSS.png" class="d-inline-block align-top navbar-img" alt="">
         CSS
     </a>
     <a class="navbar-brand" href="javascript.html">
-        <img src="./images/JS.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="./images/JS.png" class="d-inline-block align-top navbar-img" alt="">
         JS
     </a>
     <a class="navbar-brand" href="bootstrap.html">
-        <img src="./images/BOOTSTRAP.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="./images/BOOTSTRAP.png" class="d-inline-block align-top navbar-img" alt="">
         Bootstrap
     </a>
     <a class="navbar-brand" href="WWW.html">
-        <img src="./images/WWW.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="./images/WWW.png" class="d-inline-block align-top navbar-img" alt="">
         WWW
     </a>
 </nav>
@@ -74,6 +74,15 @@ Fixed-width Container: &lt;div class="container"&gt;
 Fluid-width Container: &lt;div class="container-fluid"&gt;
 Responsive Container: &lt;div class="container-{breakpoint}"&gt; (sm, md, lg, xl, xxl)
             </pre>
+            <h3>Example:</h3>
+            <div class="container">
+                <h4>This is a heading in a container</h4>
+                <p>This is a paragraph in a container</p>
+                <p>This is another paragraph</p>
+                <p>Another one</p>
+                <p>... and another one</p>
+                <p>this is really the last</p>
+            </div>
         </section>
         <section id="Typography" class="block">
             <h2 class="underline">Typography</h2>
@@ -81,6 +90,9 @@ Responsive Container: &lt;div class="container-{breakpoint}"&gt; (sm, md, lg, xl
 Headings: &lt;h1 class="display-6">Hello World&lt;/h1&gt; (1-6)
 Faded-text-heading: &lt;h1 class="text-body-secondary"&gt;
             </pre>
+            <h3>Example:</h3>
+            <h1 class="display-6">This is a heading with display-6</h1>
+            <h1 class="text-body-secondary">This is a faded-text-heading</h1>
         </section>
         <section id="highlighted-text" class="block">
             <h2 class="underline">Highlighted Text</h2>
@@ -113,7 +125,6 @@ Text Transformation capitalize: &lt;p class="text-capitalize"&gt;
 Float to Left: &lt;div class="float-start"&gt;
 Float to Right: &lt;div class="float-end"&gt;
 No Float: &lt;div class="float-none"&gt;
-
             </pre>
         </section>
         <section id="blockquotes" class="block">
@@ -148,7 +159,6 @@ Works with &lt;button&gt; and &lt;a&gt; as well. They also have the class .list-
 Farbe:
 &lt;a class="list-group-item list-group-item-{color}" href="#"&gt;
 color: primary, secondary, success, danger, warning, info, light, dark
-
             </pre>
         </section>
         <section id="cards" class="block">
@@ -169,7 +179,6 @@ Card Text: &lt;p class="card-text"&gt;
 		&lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
-
             </pre>
         </section>
         <section id="buttons" class="block">
@@ -195,7 +204,6 @@ Small Button: &lt;button class="btn btn-sm"&gt;
 Deaktivierung:
 
 Disabled Button: &lt;button class="btn btn-xs" disabled&gt;
-
             </pre>
         </section>
         <section id="tables" class="block">
@@ -207,7 +215,6 @@ Table striped: &lt;table class="table table-striped"&gt;
 Table bordered: &lt;table class="table table-bordered"&gt;
 Table hover: &lt;table class="table table-hover"&gt;
 Table striped columns: &lt;table class="table table-striped-columns"&gt;
-
             </pre>
         </section>
         <section id="Grids" class="block">
@@ -240,7 +247,6 @@ Colsamount in einer line > 12 = überflüssigen cols gehen in nächste Zeile
 	&lt;div class="row"&gt; ...
 	&lt;/div&gt;
 &lt;/div&gt;
-
             </pre>
         </section>
         <section id="images-figures" class="block">
@@ -301,7 +307,6 @@ Close button (X):
 Farben:
 &lt;div class="alert alert-{color}" role="alert"&gt;
 color: primary,  success, info, warning, danger, light, dark, secondary
-
             </pre>
         </section>
         <section id="colors" class="block">
@@ -339,7 +344,6 @@ Dropdown Item active: &lt;li&gt;&lt;a class="dropdown-item active" href="#"&gt;
 Dropdown Item disabled: &lt;li&gt;&lt;a class="dropdown-item disabled" href="#"&gt;
 Dropdown Item Text: &lt;li&gt;&lt;span class="dropdown-item-text"&gt;
 Dropdown Divider: &lt;li&gt;&lt;hr class="dropdown-divider"&gt;
-
             </pre>
         </section>
         <section id="badges" class="block">
@@ -353,7 +357,6 @@ Round Badge in corner: &lt;span class="position-absolute top-0 start-100 transla
 Farben:
 &lt;span class="badge text-bg-(color)">&lt;/span&gt;
 color: primary, secondary, success, danger, warning, info, light, dark
-
             </pre>
         </section>
         <section id="Pagination" class="block">
@@ -519,6 +522,5 @@ Form example:
     </article>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>
