@@ -449,3 +449,10 @@ body.noBorder {
 #flexBoxPoster {
     width: 100%;
 }
+
+#serif-sans-serif {
+    width: 20rem;
+}
+.adjust-height {
+    height: 18rem;
+}
