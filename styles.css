@@ -20,9 +20,10 @@ body, h1 {
     background: #212121;
 }
 
-.card {
+.cardnav {
     padding: 1rem;
     animation: 50s moveBG linear infinite;
+    min-width: 20.5rem;
 }
 
 .homeDisplay {
@@ -373,7 +374,7 @@ h1 {
     color: red;
 }
 
-.purpleBG .navbar a:hover {
+.purpleBG .navbar a:hover, .btn:hover {
     color: rebeccapurple;
 }
 
@@ -587,3 +588,10 @@ body.animation {
     color: cornflowerblue;
 }
 
+.btn {
+    color: white;
+}
+
+a.dropdown-item {
+    color: black;
+}
